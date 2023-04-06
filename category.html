@@ -25,20 +25,31 @@
 			<div class="header-top__inner wrapper">
 				<ul class="header-top__nav">
 					<li><a href="#">Акции</a></li>
+					<li><a href="#">Калькулятор</a></li>
+					<li><a href="#">Для бизнеса</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Дилеры</a></li>
-					<li><a href="#">Сервисный центр</a></li>
-					<li><a href="#">Сотрудничество</a></li>
-					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Вакансии</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Блог</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-				<a href="#" class="header-top__auth-btn">
-					<span>Вход/Регистрация</span>
-				</a>
+
+				<div class="header-top__user">
+					<div class="header-top__select">
+						<p class="select-title">Выберите город:</p>
+						<select class="select-city" data-select-city>
+							<option selected>Санкт-Петербург</option>
+							<option>Москва</option>
+							<option>Сочи</option>
+							<option>Краснодар</option>
+						</select>
+					</div>
+
+					<a href="#" class="header-top__auth-btn">
+						<span>Вход/Регистрация</span>
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -46,15 +57,7 @@
 			<div class="header-mid__inner wrapper">
 				<a href="/" class="logo-group">
 					<div class="logo-img">
-						<img src="assets/img/logo.png" alt="">
-					</div>
-					<div class="logo-text">
-						<p class="logo-text__name">АСМ технологии</p>
-						<p class="logo-text__subtitle">
-							Аренда, продажа и ремонт<br>
-							безвоздушного окрасочного<br>
-							оборудования
-						</p>
+						<img src="assets/img/logo.svg" alt="">
 					</div>
 				</a>
 				<div class="mob-headerbtns">
@@ -65,23 +68,24 @@
 				</div>
 				<form class="page-header-search" name="search" action="">
 					<div class="page-header-search__wrapper">
-						<input type="text" class="header-search-input" placeholder="введите наименование товара..." name="">
+						<input type="text" class="header-search-input"
+							placeholder="Регулятор температуры электронный РТ-300..." name="">
 						<button class="search-button" type="submit">
 							<img src="assets/img/icon/search-header.svg" alt="">
 						</button>
 					</div>
 				</form>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Ясенево"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Санкт-Петербург:</p>
+					<a href="tel:+78126482484">+7 (812) 648 24 84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Речной Вокзал"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Бесплатный по всей России:</p>
+					<a href="tel:+78126482482">+7 (812) 648 24 84</a>
 				</div>
 				<div class="header-mid__metrotel">
 					<p>Написать нам на почту:</p>
-					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+					<a href="mailto:info@obogrev-lux.ru">info@obogrev-lux.ru</a>
 				</div>
 			</div>
 		</div>
@@ -91,7 +95,7 @@
 				<div class="header-bot__inner">
 					<ul class="header-bot__menu">
 						<li class="dropdown">
-							<a href="#" class="dropbtn">Аренда оборудования</a>
+							<a href="#" class="dropbtn">Каталог</a>
 							<div class="dropdown-content">
 								<div class="header-catlist">
 									<a href="#" class="header-catlist-item">
@@ -107,7 +111,7 @@
 									</a>
 									<a href="#" class="header-catlist-item">
 										<div class="header-catlist__thumb">
-											<img src="assets/img/logo.png" alt="">
+											<img src="assets/img/logo.svg" alt="">
 										</div>
 										<p class="header-catlist__name">
 											Шлифовальные круги-диски
@@ -177,19 +181,47 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#">Окрасочные аппараты</a></li>
-						<li><a href="#">Шлифовальные машинки</a></li>
-						<li><a href="#">Комплектующие</a></li>
-						<li><a href="#">Аксессуары</a></li>
-						<li><a href="#">Запчасти</a></li>
+						<li><a href="#">Теплые полы</a></li>
+						<li><a href="#">Греющий кабель</a></li>
+						<li><a href="#">Терморегуляторы</a></li>
+						<li><a href="#">Проектирование и монтаж</a></li>
 					</ul>
+					<a href="#" class="sale-btn">
+						<svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+							<path
+								d="M5.24462 7.56228V7.12989C5.24462 6.78292 5.33594 6.46263 5.51859 6.16904C5.7045 5.87544 5.97358 5.63923 6.32583 5.46041C6.67808 5.28158 7.10698 5.19217 7.61252 5.19217C8.13111 5.19217 8.56654 5.28025 8.91879 5.45641C9.2743 5.63256 9.54338 5.86744 9.72603 6.16103C9.90868 6.45463 10 6.77758 10 7.12989V7.56228C10 7.90925 9.90704 8.22954 9.72113 8.52313C9.53849 8.81673 9.26941 9.05294 8.91389 9.23176C8.55838 9.41059 8.12459 9.5 7.61252 9.5C7.10046 9.5 6.6683 9.41059 6.31605 9.23176C5.9638 9.05294 5.69635 8.81673 5.5137 8.52313C5.33431 8.22954 5.24462 7.90925 5.24462 7.56228ZM6.94716 7.12989V7.56228C6.94716 7.71441 6.99282 7.86521 7.08415 8.01468C7.17873 8.16148 7.35486 8.23487 7.61252 8.23487C7.88323 8.23487 8.06099 8.16281 8.14579 8.01868C8.23386 7.87456 8.27789 7.72242 8.27789 7.56228V7.12989C8.27789 6.96975 8.23712 6.81495 8.15558 6.66548C8.07404 6.51601 7.89302 6.44128 7.61252 6.44128C7.35486 6.44128 7.17873 6.51601 7.08415 6.66548C6.99282 6.81495 6.94716 6.96975 6.94716 7.12989ZM0 2.87011V2.43772C0 2.08541 0.0929549 1.76246 0.278865 1.46886C0.468036 1.17527 0.738747 0.940391 1.091 0.764235C1.44325 0.588078 1.86888 0.5 2.36791 0.5C2.8865 0.5 3.32192 0.588078 3.67417 0.764235C4.02968 0.940391 4.29876 1.17527 4.48141 1.46886C4.66406 1.76246 4.75538 2.08541 4.75538 2.43772V2.87011C4.75538 3.22242 4.66243 3.54404 4.47652 3.83496C4.29387 4.12589 4.02479 4.3581 3.66928 4.53158C3.31376 4.70507 2.87997 4.79182 2.36791 4.79182C1.85584 4.79182 1.42368 4.70374 1.07143 4.52758C0.719178 4.35142 0.451729 4.11788 0.26908 3.82696C0.0896934 3.53603 0 3.21708 0 2.87011ZM1.72211 2.43772V2.87011C1.72211 3.03025 1.76778 3.18238 1.8591 3.32651C1.95042 3.47064 2.12003 3.5427 2.36791 3.5427C2.63862 3.5427 2.81637 3.47064 2.90117 3.32651C2.98924 3.18238 3.03327 3.03025 3.03327 2.87011V2.43772C3.03327 2.27758 2.9925 2.12278 2.91096 1.97331C2.82942 1.82384 2.6484 1.74911 2.36791 1.74911C2.11024 1.74911 1.93738 1.82651 1.84932 1.98132C1.76451 2.13345 1.72211 2.28559 1.72211 2.43772ZM0.831703 9.09964L7.72016 0.900356H9.10959L2.22113 9.09964H0.831703Z"
+								fill="white" />
+						</svg>Распродажа
+					</a>
 					<div class="cart-group">
-						<a href="#" class="fav-btn"></a>
-						<a href="#" class="comp-btn"></a>
-						<span class="cart-group__sep"></span>
-						<a href="#" class="cart-btn">
-							<span class="colvo">12</span>
-							146 840 ₽
+						<div class="cart-box">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+						</div>
+						<a href="#" class="cart-box">
+							<div class="cart-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div class="cart-content">
+								10 товаров
+								<span class="cart-value">146 840 Р</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -314,66 +346,79 @@
 			</span>
 			<span class="itemListElement">
 				<a href="#">
-					Шлифовальные машинки
+					Каталог
+				</a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Теплые полы
+				</a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Электрические теплые полы
 				</a>
 			</span>
 		</div>
-		<h1 class="title-page">Шлифовальные машинки</h1>
+		<h1 class="title-page">Электрические теплые полы</h1>
 	</section>
 
-	<div class="category-swiper swiper">
-		<div class="swiper-wrapper">
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Телескопические
-					шлифовальные машинки
-				</p>
-			</a>
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Шлифовальные круги-диски
-				</p>
-			</a>
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Ручные шлифовальные машинки
-				</p>
-			</a>
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Машинки ASTECH
-				</p>
-			</a>
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Машинки FESTOOL
-				</p>
-			</a>
-			<a href="#" class="category-item swiper-slide">
-				<div class="category-item__thumb">
-					<img src="assets/img/category/category-swiper-1.jpg" alt="" class="img">
-				</div>
-				<p class="category-item__name">
-					Ручные шлифовальные машинки
-				</p>
-			</a>
+	<section class="section category wrapper">
+		<div class="category-swiper swiper">
+			<div class="swiper-wrapper">
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-1.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Нагревательные маты
+					</p>
+				</a>
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-2.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Тонкий кабельный пол
+					</p>
+				</a>
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-3.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Кабельные секции
+					</p>
+				</a>
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-4.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Инфракрасные пленочные полы
+					</p>
+				</a>
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-5.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Мобильные теплые полы
+					</p>
+				</a>
+				<a href="#" class="category-item swiper-slide">
+					<div class="category-item__thumb">
+						<img src="assets/img/category/category-swiper-1.png" alt="" class="img">
+					</div>
+					<p class="category-item__name">
+						Нагревательные маты
+					</p>
+				</a>
+			</div>
 		</div>
-	</div>
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-next"></div>
+	</section>
 
 	<section class="catalog-cols wrapper mb-100">
 		<div class="catalog-filters">
@@ -388,29 +433,38 @@
 								<input type="text" name="цена" placeholder="1799">
 								<input type="text" name="цена" placeholder="29799">
 							</div>
-							<input type="range" id="volume" name="volume" min="0" max="11">
+							<input type="range" value="30" min="0" max="100" class="slider-progress">
 						</div>
 					</div>
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Мощность двигателя, ВТ</p>
+					<p class="accordion">Применение</p>
 					<div class="submenu">
 						<div class="submenu-body checkbox-list">
 							<label class="custom-checkbox">
 								<input type="checkbox" value="value-1" checked>
-								<span>800</span>
+								<span>Под плитку/керамогранит</span>
 							</label>
 							<label class="custom-checkbox">
 								<input type="checkbox" value="value-2">
-								<span>850</span>
+								<span>Под стяжку/плитку</span>
 							</label>
 						</div>
 					</div>
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Производитель:</p>
+					<p class="accordion">Страна производства</p>
+					<div class="submenu">
+						<div class="submenu-body">
+							саб
+						</div>
+					</div>
+				</div>
+
+				<div class="filters-item">
+					<p class="accordion">Бренд</p>
 					<div class="submenu">
 						<div class="submenu-body">
 							<div class="filters-proizvod">
@@ -437,7 +491,7 @@
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Фильтр для поиска</p>
+					<p class="accordion">Коллекция</p>
 					<div class="submenu">
 						<div class="submenu-body">
 							саб
@@ -446,7 +500,7 @@
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Фильтр для поиска</p>
+					<p class="accordion">Способ монтажа теплого пола</p>
 					<div class="submenu">
 						<div class="submenu-body">
 							саб
@@ -455,7 +509,7 @@
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Фильтр для поиска</p>
+					<p class="accordion">Площадь обогрева (м<sup>2</sup>)</p>
 					<div class="submenu">
 						<div class="submenu-body">
 							саб
@@ -464,7 +518,7 @@
 				</div>
 
 				<div class="filters-item">
-					<p class="accordion">Фильтр для поиска</p>
+					<p class="accordion">Готовый комплект</p>
 					<div class="submenu">
 						<div class="submenu-body">
 							саб
@@ -472,26 +526,173 @@
 					</div>
 				</div>
 
-				<a href="#" class="filters-sbros">Сбросить фильтры</a>
+				<div class="filters-item">
+					<p class="accordion">Тип термостата в комплекте</p>
+					<div class="submenu">
+						<div class="submenu-body">
+							саб
+						</div>
+					</div>
+				</div>
+
+				<div class="filters-item">
+					<p class="accordion">Монтаж</p>
+					<div class="submenu">
+						<div class="submenu-body">
+							саб
+						</div>
+					</div>
+				</div>
+
+				<div class="filters-item">
+					<p class="accordion">Тип связи</p>
+					<div class="submenu">
+						<div class="submenu-body">
+							саб
+						</div>
+					</div>
+				</div>
+
+				<div class="filters-item">
+					<p class="accordion">
+						Удельная мощность
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path
+								d="M7.57496 7.49996C7.77088 6.94302 8.15759 6.47338 8.66659 6.17424C9.17559 5.87509 9.77404 5.76574 10.3559 5.86555C10.9378 5.96536 11.4656 6.2679 11.8459 6.71957C12.2261 7.17124 12.4342 7.74289 12.4333 8.33329C12.4333 9.99996 9.93329 10.8333 9.93329 10.8333M9.99996 14.1666H10.0083M18.3333 9.99996C18.3333 14.6023 14.6023 18.3333 9.99996 18.3333C5.39759 18.3333 1.66663 14.6023 1.66663 9.99996C1.66663 5.39759 5.39759 1.66663 9.99996 1.66663C14.6023 1.66663 18.3333 5.39759 18.3333 9.99996Z"
+								stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</p>
+					<div class="submenu">
+						<div class="submenu-body">
+							саб
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="filter-reboot">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+						<path
+							d="M8.99998 10.05L5.32498 13.725C5.18748 13.8625 5.01248 13.9312 4.79998 13.9312C4.58748 13.9312 4.41248 13.8625 4.27498 13.725C4.13748 13.5875 4.06873 13.4125 4.06873 13.2C4.06873 12.9875 4.13748 12.8125 4.27498 12.675L7.94998 8.99998L4.27498 5.32498C4.13748 5.18748 4.06873 5.01248 4.06873 4.79998C4.06873 4.58748 4.13748 4.41248 4.27498 4.27498C4.41248 4.13748 4.58748 4.06873 4.79998 4.06873C5.01248 4.06873 5.18748 4.13748 5.32498 4.27498L8.99998 7.94998L12.675 4.27498C12.8125 4.13748 12.9875 4.06873 13.2 4.06873C13.4125 4.06873 13.5875 4.13748 13.725 4.27498C13.8625 4.41248 13.9312 4.58748 13.9312 4.79998C13.9312 5.01248 13.8625 5.18748 13.725 5.32498L10.05 8.99998L13.725 12.675C13.8625 12.8125 13.9312 12.9875 13.9312 13.2C13.9312 13.4125 13.8625 13.5875 13.725 13.725C13.5875 13.8625 13.4125 13.9312 13.2 13.9312C12.9875 13.9312 12.8125 13.8625 12.675 13.725L8.99998 10.05Z"
+							fill="black" />
+					</svg>
+					Сбросить фильтры
+				</a>
 			</div>
 		</div>
 
 
 		<div class="catalog-main">
+			<div class="catalog-select">
+				<p class="catalog-select-title">
+					Часто ищут:
+				</p>
+				<div class="catalog-select-items">
+					<a href="#" class="catalog-select-item active">
+						0,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						1 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						1,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						2 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						2,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						3 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						3,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						4 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						4,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						5,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						6 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						6,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						7 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						7,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						8 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						8,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						9 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						9,5 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						10 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						11 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						12 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						13 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						14 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						15 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						16 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						17 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						18 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						19 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						20 м<sup>2</sup>
+					</a>
+					<a href="#" class="catalog-select-item">
+						25 м<sup>2</sup>
+					</a>
+				</div>
+			</div>
 			<div class="catalog-header">
 				<div class="catalog-header-often">
-					<p class="catalog-header-often__title">
-						Часто ищут:
-					</p>
 					<div class="catalog-header-often__list">
-						<a href="#" class="catalog-header-often__list-item">
-							Шлифмашинка жираф
+						<a href="#" class="catalog-header-often__list-item active">
+							Товары <span>1115</span>
 						</a>
 						<a href="#" class="catalog-header-often__list-item">
-							Диск 225
+							Бренды <span>56</span>
 						</a>
 						<a href="#" class="catalog-header-often__list-item">
-							Festool машинка
+							Коллекции <span>40</span>
 						</a>
 					</div>
 				</div>
@@ -511,19 +712,30 @@
 
 			<div class="catalog-grid">
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -537,18 +749,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -556,25 +769,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -588,18 +819,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -607,25 +839,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -639,18 +889,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -658,25 +909,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -690,18 +959,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -709,25 +979,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -741,18 +1029,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -760,25 +1049,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -792,18 +1099,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -811,25 +1119,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -843,18 +1169,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -862,25 +1189,43 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="prod-card">
-					<div class="prod-card-top">
-						<div class="prod-card-header">
-							<p class="prod-card-header__art">Артикул: 123456</p>
-							<div class="prod-card-header__btns">
-								<a href="#" class="fav-blue"></a>
-								<a href="#" class="comp-blue"></a>
-							</div>
+					<div class="prod-card-header">
+						<p class="prod-card-header__art"><span>Артикул:</span> 144000</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
 						</div>
-						<div class="prod-card-thumb images">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-							<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
-							<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
-						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
 					</div>
 					<div class="prod-card-main">
 						<div class="prod-card-reviews">
@@ -894,18 +1239,19 @@
 							<p class="prod-card-reviews__kolvo">10 отзывов</p>
 						</div>
 						<a href="#" class="prod-card-title">
-							Шлифовальный круг диск D=225 ММ R100 <br>
-							8 отверстий
+							Нагревательный мат 2ж <br>
+							15,00 кв.м 2250Вт Lite <br>
+							комплект
 						</a>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: <span>21</span></p>
 					</div>
 					<div class="prod-card-bottom">
 						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
 							<p class="prod-card-price__old">28 300 Р</p>
 						</div>
-						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<a href="#" class="prod-card-test">Заказать оптом</a>
 						<div class="prod-card-bottom__btns">
 							<div class="prod-card-count">
 								<input type="button" class="buttonCountMinus" value="-">
@@ -913,7 +1259,14 @@
 								<input type="button" class="buttonCountPlus" value="+">
 								<input type="hidden" value="1" class="num" name="num">
 							</div>
-							<a href="#" class="prod-card-cartbtn">В корзину</a>
+							<a href="#" class="prod-card-cartbtn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+								В корзину
+							</a>
 						</div>
 					</div>
 				</div>
@@ -951,17 +1304,28 @@
 
 	<section class="banner-3 wrapper mb-100">
 		<div class="banner-3-body swiper-slide">
-			<img src="assets/img/banners/bannermain-3__bg.png" alt="" class="banner-3-bg img" aria-hidden="true">
+			<div class="banner-3-bg img">
+				<img src="assets/img/decor/bg-decor-purple.svg" width="770" height="770" alt="decor" aria-hidden="true">
+			</div>
 			<div class="banner-3-left">
 				<h2 class="banner-3-title">
-					<span>новый</span> ASTECH ASM-4800
+					Остались вопросы?
 				</h2>
 				<p class="banner-3-subtitle">
-					Окрасочный аппарат поршневого типа. Беcщеточный двигатель.
+					наши эксперты подберут лучшее решение под ваш бюджет!
 				</p>
 				<form action="" class="banner-3-form">
-					<input type="tel" placeholder="Номер телефона" required="">
-					<input type="submit" value="Оставить заявку" class="banner-3-form-submit">
+					<div class="banner-3-form-fields">
+						<input type="text" placeholder="Укажите ваше ФИО" required>
+						<input type="tel" placeholder="Номер телефона" required>
+					</div>
+					<div class="banner-3-form-fields">
+						<label for="privacy" class="custom-checkbox">
+							<input type="checkbox" id="privacy" name="privacy">
+							<span>Я даю согласие на обработку персональных данных</span>
+						</label>
+						<input type="submit" value="Получить консультацию бесплатно" class="banner-3-form-submit">
+					</div>
 				</form>
 			</div>
 			<div class="banner-3-right">
@@ -969,28 +1333,19 @@
 					<img src="assets/img/banners/bannermain-1__img.png" alt="" class="desc">
 					<img src="assets/img/banners/bannermain-1__img-mob.png" alt="" class="mob">
 
-					<div class="banner-3-sticker">
-						<p>
-							скидка до
-							<span>-20%</span>
-						</p>
-					</div>
-
 					<div class="banner-3-bullet bullet-1">
 						<div class="banner-3-bullet__inner">
-							<img src="assets/img/banners/bullet-1.png" alt="">
+							Отвечаем в течение 20 минут!
 						</div>
 					</div>
 					<div class="banner-3-bullet bullet-2">
 						<div class="banner-3-bullet__inner">
-							<p>сопло 517</p>
-							<p>в комплекте</p>
+							Эксперты с опытом от 10 лет
 						</div>
 					</div>
 					<div class="banner-3-bullet bullet-3">
 						<div class="banner-3-bullet__inner">
-							<p>3000 вт</p>
-							<p>мощность</p>
+							Дополнительное преимущество
 						</div>
 					</div>
 				</div>
@@ -1003,28 +1358,24 @@
 			<div class="footer-top">
 				<a href="/" class="logo-group">
 					<div class="logo-img">
-						<img src="assets/img/logo.png" alt="">
-					</div>
-					<div class="logo-text">
-						<p class="logo-text__name">АСМ технологии</p>
-						<p class="logo-text__subtitle">
-							Аренда, продажа и ремонт<br>
-							безвоздушного окрасочного<br>
-							оборудования
-						</p>
+						<img src="assets/img/logo.svg" alt="logo">
 					</div>
 				</a>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Ясенево"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Санкт-Петербург</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Речной Вокзал"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Москва</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p>Написать нам на почту:</p>
-					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+					<p class="metro-icon">Екатеринбург</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">Бесплатный по всей России</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 			</div>
 
@@ -1032,33 +1383,35 @@
 				<div class="footer-menu">
 					<p class="footer-menu-title">Каталог</p>
 					<ul>
-						<li><a href="#">Аренда оборудования</a></li>
-						<li><a href="#">Окрасочные аппараты</a></li>
-						<li><a href="#">Шлифовальные машинки</a></li>
-						<li><a href="#">Комплектующие</a></li>
-						<li><a href="#">Аксессуары</a></li>
-						<li><a href="#">Запчасти</a></li>
-						<li><a href="#">БУ на новые</a></li>
+						<li><a href="#">Электрические теплые полы</a></li>
+						<li><a href="#">Нагревательные маты</a></li>
+						<li><a href="#">Пленочные теплые полы</a></li>
+						<li><a href="#">Кабельные секции</a></li>
+						<li><a href="#">Тонкие нагревательные маты</a></li>
+						<li><a href="#">Терморегуляторы для теплого пола</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu">
 					<p class="footer-menu-title">Услуги</p>
 					<ul>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">Сервисный центр</a></li>
-						<li><a href="#">Для дилеров</a></li>
-						<li><a href="#" class="blue">Вакансии</a></li>
+						<li><a href="#">Обогрев открытых площадей</a></li>
+						<li><a href="#">Обогрев теплиц</a></li>
+						<li><a href="#">Проектирование</a></li>
+						<li><a href="#">Монтаж</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Калькулятор</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu">
 					<p class="footer-menu-title">Информация</p>
 					<ul>
+						<li><a href="#">Акции</a></li>
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Блог</a></li>
 						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Оплата и возврат</a></li>
+						<li><a href="#">Вакансии</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu menubox-soc">
@@ -1066,31 +1419,31 @@
 					<ul>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+								<img src="assets/img/icon/menubox-soc__vk.svg" alt="">
 								<span>Вконтакте</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+								<img src="assets/img/icon/menubox-soc__yt.svg" alt="">
 								<span>Youtube</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+								<img src="assets/img/icon/menubox-soc__ws.svg" alt="">
 								<span>WhatsApp</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+								<img src="assets/img/icon/menubox-soc__yd.svg" alt="">
 								<span>Яндекс.Дзен</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+								<img src="assets/img/icon/menubox-soc__rt.svg" alt="">
 								<span>Rutube</span>
 							</a>
 						</li>
@@ -1099,7 +1452,10 @@
 			</div>
 
 			<div class="footer-ur">
-				Здесь может быть расположена юридическая информация о вашей компании
+				<p>(c) 2000–2022, ООО «Обогрев Люкс»</p>
+				<p>“Обогрев Люкс” использует файлы «cookie», с целью персонализации сервисов и повышения удобства
+					пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих
+					посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.</p>
 			</div>
 
 			<div class="footer-bottom">
@@ -1107,7 +1463,7 @@
 					Политика конфиденциальности Политика компании в отношении обработки персональных данных
 				</a>
 				<a href="http://silverduck.net/" target="_blank">
-					Разработка SilverDuck
+					Разработка и продвижение SilverDuck
 				</a>
 			</div>
 		</div>

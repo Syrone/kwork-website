@@ -228,9 +228,10 @@
 	height: 38px;
 	padding: 0 45px 0 10px;
 	border: 1px solid #D9D9D9;
-	border-radius: 100px;
+	border-radius: 10px;
 	background: #fff;
-	font: 14px/32px Arial, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
 	color: #000;
 	text-shadow: 1px 1px #FFF;
 }

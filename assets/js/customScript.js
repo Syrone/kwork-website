@@ -549,10 +549,13 @@ var mainbannerSwiper = new Swiper('.mainbanner-swiper', {
 // слайдер Swiper категорий в каталоге
 var categorySwiper = new Swiper('.category-swiper', {
 	slideToClickedSlide: true,
-	slidesPerView: 'auto',
+	slidesPerView: 5,
 	spaceBetween: 10,
 	initialSlide: 0,
 	mousewheel: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+	},
 });
 
 // слайдер Swiper во внутренней странице товара с галереей
@@ -635,8 +638,8 @@ var contactsTabsSwiper = new Swiper('.contacts-tabs-swiper', {
 // слайдер Swiper категорий блога и каотегорий вакансий
 var categorySwiper = new Swiper('.category-swiper', {
 	slideToClickedSlide: true,
-	slidesPerView: 'auto',
-	spaceBetween: 12,
+	slidesPerView: 5,
+	spaceBetween: 10,
 	initialSlide: 0,
 	// freeMode: true,
 	mousewheel: true,
