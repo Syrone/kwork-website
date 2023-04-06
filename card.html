@@ -25,20 +25,31 @@
 			<div class="header-top__inner wrapper">
 				<ul class="header-top__nav">
 					<li><a href="#">Акции</a></li>
+					<li><a href="#">Калькулятор</a></li>
+					<li><a href="#">Для бизнеса</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Дилеры</a></li>
-					<li><a href="#">Сервисный центр</a></li>
-					<li><a href="#">Сотрудничество</a></li>
-					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Вакансии</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Блог</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-				<a href="#" class="header-top__auth-btn">
-					<span>Вход/Регистрация</span>
-				</a>
+
+				<div class="header-top__user">
+					<div class="header-top__select">
+						<p class="select-title">Выберите город:</p>
+						<select class="select-city" data-select-city>
+							<option selected>Санкт-Петербург</option>
+							<option>Москва</option>
+							<option>Сочи</option>
+							<option>Краснодар</option>
+						</select>
+					</div>
+
+					<a href="#" class="header-top__auth-btn">
+						<span>Вход/Регистрация</span>
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -46,15 +57,7 @@
 			<div class="header-mid__inner wrapper">
 				<a href="/" class="logo-group">
 					<div class="logo-img">
-						<img src="assets/img/logo.png" alt="">
-					</div>
-					<div class="logo-text">
-						<p class="logo-text__name">АСМ технологии</p>
-						<p class="logo-text__subtitle">
-							Аренда, продажа и ремонт<br>
-							безвоздушного окрасочного<br>
-							оборудования
-						</p>
+						<img src="assets/img/logo.svg" alt="">
 					</div>
 				</a>
 				<div class="mob-headerbtns">
@@ -65,23 +68,24 @@
 				</div>
 				<form class="page-header-search" name="search" action="">
 					<div class="page-header-search__wrapper">
-						<input type="text" class="header-search-input" placeholder="введите наименование товара..." name="">
+						<input type="text" class="header-search-input"
+							placeholder="Регулятор температуры электронный РТ-300..." name="">
 						<button class="search-button" type="submit">
 							<img src="assets/img/icon/search-header.svg" alt="">
 						</button>
 					</div>
 				</form>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Ясенево"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Санкт-Петербург:</p>
+					<a href="tel:+78126482484">+7 (812) 648 24 84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Речной Вокзал"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Бесплатный по всей России:</p>
+					<a href="tel:+78126482482">+7 (812) 648 24 84</a>
 				</div>
 				<div class="header-mid__metrotel">
 					<p>Написать нам на почту:</p>
-					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+					<a href="mailto:info@obogrev-lux.ru">info@obogrev-lux.ru</a>
 				</div>
 			</div>
 		</div>
@@ -91,7 +95,7 @@
 				<div class="header-bot__inner">
 					<ul class="header-bot__menu">
 						<li class="dropdown">
-							<a href="#" class="dropbtn">Аренда оборудования</a>
+							<a href="#" class="dropbtn">Каталог</a>
 							<div class="dropdown-content">
 								<div class="header-catlist">
 									<a href="#" class="header-catlist-item">
@@ -107,7 +111,7 @@
 									</a>
 									<a href="#" class="header-catlist-item">
 										<div class="header-catlist__thumb">
-											<img src="assets/img/logo.png" alt="">
+											<img src="assets/img/logo.svg" alt="">
 										</div>
 										<p class="header-catlist__name">
 											Шлифовальные круги-диски
@@ -177,19 +181,47 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#">Окрасочные аппараты</a></li>
-						<li><a href="#">Шлифовальные машинки</a></li>
-						<li><a href="#">Комплектующие</a></li>
-						<li><a href="#">Аксессуары</a></li>
-						<li><a href="#">Запчасти</a></li>
+						<li><a href="#">Теплые полы</a></li>
+						<li><a href="#">Греющий кабель</a></li>
+						<li><a href="#">Терморегуляторы</a></li>
+						<li><a href="#">Проектирование и монтаж</a></li>
 					</ul>
+					<a href="#" class="sale-btn">
+						<svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+							<path
+								d="M5.24462 7.56228V7.12989C5.24462 6.78292 5.33594 6.46263 5.51859 6.16904C5.7045 5.87544 5.97358 5.63923 6.32583 5.46041C6.67808 5.28158 7.10698 5.19217 7.61252 5.19217C8.13111 5.19217 8.56654 5.28025 8.91879 5.45641C9.2743 5.63256 9.54338 5.86744 9.72603 6.16103C9.90868 6.45463 10 6.77758 10 7.12989V7.56228C10 7.90925 9.90704 8.22954 9.72113 8.52313C9.53849 8.81673 9.26941 9.05294 8.91389 9.23176C8.55838 9.41059 8.12459 9.5 7.61252 9.5C7.10046 9.5 6.6683 9.41059 6.31605 9.23176C5.9638 9.05294 5.69635 8.81673 5.5137 8.52313C5.33431 8.22954 5.24462 7.90925 5.24462 7.56228ZM6.94716 7.12989V7.56228C6.94716 7.71441 6.99282 7.86521 7.08415 8.01468C7.17873 8.16148 7.35486 8.23487 7.61252 8.23487C7.88323 8.23487 8.06099 8.16281 8.14579 8.01868C8.23386 7.87456 8.27789 7.72242 8.27789 7.56228V7.12989C8.27789 6.96975 8.23712 6.81495 8.15558 6.66548C8.07404 6.51601 7.89302 6.44128 7.61252 6.44128C7.35486 6.44128 7.17873 6.51601 7.08415 6.66548C6.99282 6.81495 6.94716 6.96975 6.94716 7.12989ZM0 2.87011V2.43772C0 2.08541 0.0929549 1.76246 0.278865 1.46886C0.468036 1.17527 0.738747 0.940391 1.091 0.764235C1.44325 0.588078 1.86888 0.5 2.36791 0.5C2.8865 0.5 3.32192 0.588078 3.67417 0.764235C4.02968 0.940391 4.29876 1.17527 4.48141 1.46886C4.66406 1.76246 4.75538 2.08541 4.75538 2.43772V2.87011C4.75538 3.22242 4.66243 3.54404 4.47652 3.83496C4.29387 4.12589 4.02479 4.3581 3.66928 4.53158C3.31376 4.70507 2.87997 4.79182 2.36791 4.79182C1.85584 4.79182 1.42368 4.70374 1.07143 4.52758C0.719178 4.35142 0.451729 4.11788 0.26908 3.82696C0.0896934 3.53603 0 3.21708 0 2.87011ZM1.72211 2.43772V2.87011C1.72211 3.03025 1.76778 3.18238 1.8591 3.32651C1.95042 3.47064 2.12003 3.5427 2.36791 3.5427C2.63862 3.5427 2.81637 3.47064 2.90117 3.32651C2.98924 3.18238 3.03327 3.03025 3.03327 2.87011V2.43772C3.03327 2.27758 2.9925 2.12278 2.91096 1.97331C2.82942 1.82384 2.6484 1.74911 2.36791 1.74911C2.11024 1.74911 1.93738 1.82651 1.84932 1.98132C1.76451 2.13345 1.72211 2.28559 1.72211 2.43772ZM0.831703 9.09964L7.72016 0.900356H9.10959L2.22113 9.09964H0.831703Z"
+								fill="white" />
+						</svg>Распродажа
+					</a>
 					<div class="cart-group">
-						<a href="#" class="fav-btn"></a>
-						<a href="#" class="comp-btn"></a>
-						<span class="cart-group__sep"></span>
-						<a href="#" class="cart-btn">
-							<span class="colvo">12</span>
-							146 840 ₽
+						<div class="cart-box">
+							<a href="#" class="fav-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+							<a href="#" class="comp-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+										fill="#4A4A4A" />
+								</svg>
+							</a>
+						</div>
+						<a href="#" class="cart-box">
+							<div class="cart-btn box-pill">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path
+										d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div class="cart-content">
+								10 товаров
+								<span class="cart-value">146 840 Р</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -314,28 +346,33 @@
 			</span>
 			<span class="itemListElement">
 				<a href="#">
-					Шлифовальные машинки
+					Теплые полы
 				</a>
 			</span>
 			<span class="itemListElement">
 				<a href="#">
-					Шлифовальные круги-диски
+					Электрические теплые полы
 				</a>
 			</span>
 			<span class="itemListElement">
 				<a href="#">
-					Шлифовальный круг диск D=225 ММ R=любое зерно
+					Нагревательные маты
+				</a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Нагревательный мат 2ж 15,00 кв.м 2250Вт Lite комплект
 				</a>
 			</span>
 		</div>
-		<h1 class="title-page">Шлифовальный круг диск D=225 ММ R=любое зерно</h1>
+		<h1 class="title-page">Нагревательный мат 2ж 15,00 кв.м 2250Вт Lite комплект</h1>
 	</section>
 
 	<section class="card-inner wrapper mb-100">
 		<div class="card-col-thumbs">
 			<div class="card-col-thumbs-header">
 				<div class="card-col-thumbs-art">
-					<b>Артикул: </b> 123456
+					<b>Артикул: </b> 144000
 				</div>
 				<div class="prod-card-reviews">
 					<div class="review-stars">
@@ -345,8 +382,6 @@
 						<span class="review-star"></span>
 						<span class="review-star star-dis"></span>
 					</div>
-					<p class="prod-card-reviews__reit">рейтинг 4/5</p>
-					<span class="prod-card-reviews__sep"> | </span>
 					<p class="prod-card-reviews__kolvo">10 отзывов</p>
 				</div>
 			</div>
@@ -356,35 +391,40 @@
 					<div class="swiper-wrapper">
 						<!-- Слайды -->
 						<div class="swiper-slide">
-							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide"
+								data-fancybox="gallery-1">
 								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
 									class="img swiper-lazy">
 								<div class="swiper-lazy-preloader"></div>
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide"
+								data-fancybox="gallery-1">
 								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
 									class="img swiper-lazy">
 								<div class="swiper-lazy-preloader"></div>
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide"
+								data-fancybox="gallery-1">
 								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
 									class="img swiper-lazy">
 								<div class="swiper-lazy-preloader"></div>
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide"
+								data-fancybox="gallery-1">
 								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
 									class="img swiper-lazy">
 								<div class="swiper-lazy-preloader"></div>
 							</a>
 						</div>
 						<div class="swiper-slide">
-							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide"
+								data-fancybox="gallery-1">
 								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
 									class="img swiper-lazy">
 								<div class="swiper-lazy-preloader"></div>
@@ -432,103 +472,168 @@
 		</div>
 
 		<div class="card-col-descrip">
-			<p class="card-col-descrip__title">
-				Описание:
-			</p>
-			<p class="card-col-descrip__text">
-				Шлифовальный круг диск<br>
-				D=225 ММ
-			</p>
-			<ul class="card-col-descrip__list">
-				<li>
-					<span class="card-col-descrip__list-name">
-						бренд
-					</span>
-					<a href="#catd-tabs" class="card-col-descrip__list-brand opisan-btn">
-						<img src="assets/img/banners/bullet-1.png" alt="">
-					</a>
-				</li>
-				<li>
-					<span class="card-col-descrip__list-name">
-						производительность:
-					</span>
-					<span class="card-col-descrip__list-value">
-						6 л/м
-					</span>
-				</li>
-			</ul>
-			<p class="card-col-descrip__title">
-				Характеристики:
-			</p>
 			<div class="card-col-descrip__har">
-				<p class="card-col-descrip__har-title">Зерно:</p>
+				<p class="card-col-descrip__har-title">Площадь обогрева:</p>
 				<div class="card-col-descrip__har-list">
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=40" checked>
-						<span>R=40</span>
+						<span>0,65</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=60">
-						<span>R=60</span>
+						<span>1,2</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=80">
-						<span>R=80</span>
+						<span>1,5</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=100">
-						<span>R=100</span>
+						<span>2</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=120">
-						<span>R=120</span>
+						<span>2,7</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=150">
-						<span>R=150</span>
+						<span>3,2</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=180">
-						<span>R=180</span>
+						<span>3,85</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=240">
-						<span>R=240</span>
+						<span>4,5</span>
 					</label>
 					<label class="custom-radio">
 						<input type="radio" name="Тип зерна" value="R=320">
-						<span>R=320</span>
+						<span>5,25</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>6</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>7</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>8</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>9</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>10,2</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>12,5</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>14,5</span>
 					</label>
 				</div>
+				<p class="card-col-descrip__har-title">Комплект с терморегулятором:</p>
+				<form class="card-col-descrip__har-list">
+					<label>
+						<input type="checkbox" name="sortament" value="1">
+						Механический
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="2">
+						Цифровой
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="3">
+						По wi-fi
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="4">
+						Удаленное
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="4">
+						Электронное
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="4">
+						Кнопочное
+					</label>
+					<label>
+						<input type="checkbox" name="sortament" value="4">
+						Сенсорный
+					</label>
+				</form>
 			</div>
 			<a href="#catd-tabs" class="all-har character-btn">Все характеристики</a>
 		</div>
 
 		<div class="card-col-main">
 			<div class="card-col-main-header">
-				<a href="#" class="comp-gray">Сравнить</a>
-				<a href="#" class="fav-gray">В избранное</a>
-				<a href="#" class="sale-orange">Хочу скидку!</a>
+				<a href="#" class="card-item">
+					<div href="#" class="fav-btn box-pill">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+							<path
+								d="M7.88958 12.5467L7.81253 12.6238L7.72777 12.5467C4.06797 9.22594 1.64864 7.03005 1.64864 4.80335C1.64864 3.26238 2.80437 2.10665 4.34534 2.10665C5.53189 2.10665 6.68762 2.87713 7.09597 3.92499H8.52908C8.93744 2.87713 10.0932 2.10665 11.2797 2.10665C12.8207 2.10665 13.9764 3.26238 13.9764 4.80335C13.9764 7.03005 11.5571 9.22594 7.88958 12.5467ZM11.2797 0.565674C9.93907 0.565674 8.65236 1.18977 7.81253 2.16828C6.9727 1.18977 5.68599 0.565674 4.34534 0.565674C1.97224 0.565674 0.107666 2.42255 0.107666 4.80335C0.107666 7.70808 2.72732 10.0889 6.69532 13.6871L7.81253 14.7041L8.92973 13.6871C12.8977 10.0889 15.5174 7.70808 15.5174 4.80335C15.5174 2.42255 13.6528 0.565674 11.2797 0.565674Z"
+								fill="#4A4A4A" />
+						</svg>
+					</div>
+					Сравнить
+				</a>
+				<a href="#" class="card-item">
+					<div href="#" class="comp-btn box-pill">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+							<path
+								d="M9.51107 0.914551V1.98067L13.6821 3.37214L16.712 2.36274L17.24 3.9444L14.7107 4.78779L17.2934 11.8886C16.8267 12.3758 16.266 12.7634 15.6454 13.0279C15.0247 13.2924 14.3568 13.4284 13.6821 13.4277C13.0074 13.4285 12.3396 13.2925 11.7189 13.028C11.0982 12.7634 10.5375 12.3758 10.0708 11.8886L12.6519 4.78779L9.51107 3.74002V15.0961H12.8479V16.7646H4.50581V15.0961H7.84265V3.74002L4.69935 4.78779L7.28206 11.8886C6.81553 12.3759 6.25505 12.7635 5.6345 13.028C5.01394 13.2925 4.34619 13.4285 3.6716 13.4277C2.99689 13.4285 2.32903 13.2925 1.70834 13.028C1.08765 12.7634 0.527018 12.3758 0.0603027 11.8886L2.64135 4.78779L0.113692 3.94524L0.641747 2.36191L3.6716 3.3713L7.84265 1.98067V0.914551H9.51107ZM13.6821 6.83995L12.0487 11.333C12.5473 11.6136 13.11 11.7605 13.6821 11.7593C14.2661 11.7593 14.825 11.6091 15.3155 11.3338L13.6821 6.83911V6.83995ZM3.6716 6.83995L2.03822 11.333C2.53679 11.6136 3.09948 11.7605 3.6716 11.7593C4.25555 11.7593 4.81447 11.6091 5.30498 11.3338L3.6716 6.83911V6.83995Z"
+								fill="#4A4A4A" />
+						</svg>
+					</div>
+					В избранное
+				</a>
+				<a href="#" class="card-item sale">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path
+							d="M4.56609 9.63397C3.72942 9.63397 2.96395 9.42899 2.26969 9.01903C1.57543 8.58956 1.02359 8.0039 0.614152 7.26208C0.204717 6.52025 0 5.70034 0 4.80234C0 3.90434 0.204717 3.09419 0.614152 2.37189C1.02359 1.63006 1.57543 1.05417 2.26969 0.644217C2.96395 0.214739 3.72942 0 4.56609 0C5.38496 0 6.14152 0.214739 6.83578 0.644217C7.53004 1.05417 8.08189 1.63006 8.49132 2.37189C8.90076 3.09419 9.10547 3.90434 9.10547 4.80234C9.10547 5.70034 8.90076 6.52025 8.49132 7.26208C8.08189 8.0039 7.53004 8.58956 6.83578 9.01903C6.14152 9.42899 5.38496 9.63397 4.56609 9.63397ZM13.6182 0.351392H16.5287L6.38184 19.6779H3.498L13.6182 0.351392ZM4.59279 6.91069C5.09123 6.91069 5.50067 6.71547 5.82109 6.32504C6.15932 5.9346 6.32844 5.42704 6.32844 4.80234C6.32844 4.19717 6.15932 3.69937 5.82109 3.30893C5.50067 2.9185 5.09123 2.72328 4.59279 2.72328C4.05874 2.72328 3.62261 2.9185 3.28438 3.30893C2.96395 3.69937 2.80374 4.19717 2.80374 4.80234C2.80374 5.42704 2.96395 5.9346 3.28438 6.32504C3.60481 6.71547 4.04094 6.91069 4.59279 6.91069ZM15.4339 20C14.615 20 13.8585 19.795 13.1642 19.3851C12.47 18.9556 11.9181 18.3699 11.5087 17.6281C11.0992 16.8863 10.8945 16.0664 10.8945 15.1684C10.8945 14.2704 11.0992 13.4602 11.5087 12.7379C11.9181 11.9961 12.47 11.4202 13.1642 11.0102C13.8585 10.5808 14.615 10.366 15.4339 10.366C16.2528 10.366 17.0093 10.5808 17.7036 11.0102C18.4157 11.4202 18.9764 11.9961 19.3858 12.7379C19.7953 13.4602 20 14.2704 20 15.1684C20 16.0664 19.7953 16.8863 19.3858 17.6281C18.9764 18.3699 18.4246 18.9556 17.7303 19.3851C17.036 19.795 16.2706 20 15.4339 20ZM15.4606 17.2474C15.9591 17.2474 16.3685 17.0522 16.6889 16.6618C17.0271 16.2714 17.1963 15.7735 17.1963 15.1684C17.1963 14.5632 17.0271 14.0654 16.6889 13.675C16.3685 13.2845 15.9591 13.0893 15.4606 13.0893C14.9088 13.0893 14.4726 13.2845 14.1522 13.675C13.8318 14.0459 13.6716 14.5437 13.6716 15.1684C13.6716 15.7931 13.8318 16.3006 14.1522 16.6911C14.4726 17.062 14.9088 17.2474 15.4606 17.2474Z"
+							fill="#514A7B" />
+						<path
+							d="M4.56609 9.63397C3.72942 9.63397 2.96395 9.42899 2.26969 9.01903C1.57543 8.58956 1.02359 8.0039 0.614152 7.26208C0.204717 6.52025 0 5.70034 0 4.80234C0 3.90434 0.204717 3.09419 0.614152 2.37189C1.02359 1.63006 1.57543 1.05417 2.26969 0.644217C2.96395 0.214739 3.72942 0 4.56609 0C5.38496 0 6.14152 0.214739 6.83578 0.644217C7.53004 1.05417 8.08189 1.63006 8.49132 2.37189C8.90076 3.09419 9.10547 3.90434 9.10547 4.80234C9.10547 5.70034 8.90076 6.52025 8.49132 7.26208C8.08189 8.0039 7.53004 8.58956 6.83578 9.01903C6.14152 9.42899 5.38496 9.63397 4.56609 9.63397ZM13.6182 0.351392H16.5287L6.38184 19.6779H3.498L13.6182 0.351392ZM4.59279 6.91069C5.09123 6.91069 5.50067 6.71547 5.82109 6.32504C6.15932 5.9346 6.32844 5.42704 6.32844 4.80234C6.32844 4.19717 6.15932 3.69937 5.82109 3.30893C5.50067 2.9185 5.09123 2.72328 4.59279 2.72328C4.05874 2.72328 3.62261 2.9185 3.28438 3.30893C2.96395 3.69937 2.80374 4.19717 2.80374 4.80234C2.80374 5.42704 2.96395 5.9346 3.28438 6.32504C3.60481 6.71547 4.04094 6.91069 4.59279 6.91069ZM15.4339 20C14.615 20 13.8585 19.795 13.1642 19.3851C12.47 18.9556 11.9181 18.3699 11.5087 17.6281C11.0992 16.8863 10.8945 16.0664 10.8945 15.1684C10.8945 14.2704 11.0992 13.4602 11.5087 12.7379C11.9181 11.9961 12.47 11.4202 13.1642 11.0102C13.8585 10.5808 14.615 10.366 15.4339 10.366C16.2528 10.366 17.0093 10.5808 17.7036 11.0102C18.4157 11.4202 18.9764 11.9961 19.3858 12.7379C19.7953 13.4602 20 14.2704 20 15.1684C20 16.0664 19.7953 16.8863 19.3858 17.6281C18.9764 18.3699 18.4246 18.9556 17.7303 19.3851C17.036 19.795 16.2706 20 15.4339 20ZM15.4606 17.2474C15.9591 17.2474 16.3685 17.0522 16.6889 16.6618C17.0271 16.2714 17.1963 15.7735 17.1963 15.1684C17.1963 14.5632 17.0271 14.0654 16.6889 13.675C16.3685 13.2845 15.9591 13.0893 15.4606 13.0893C14.9088 13.0893 14.4726 13.2845 14.1522 13.675C13.8318 14.0459 13.6716 14.5437 13.6716 15.1684C13.6716 15.7931 13.8318 16.3006 14.1522 16.6911C14.4726 17.062 14.9088 17.2474 15.4606 17.2474Z"
+							fill="url(#paint0_linear_105_2583)" />
+						<defs>
+							<linearGradient id="paint0_linear_105_2583" x1="18.5" y1="1.25413e-06" x2="-4.18674" y2="7.76024"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#7457A4" />
+								<stop offset="1" stop-color="#4C3376" />
+							</linearGradient>
+						</defs>
+					</svg>
+					Хочу скидку!
+				</a>
 			</div>
 			<div class="card-col-main-body">
 				<div class="card-col-main-top">
 					<div class="card-col-main-price">
-						<p class="prod-card-price-title">Цена за штуку:</p>
 						<div class="prod-card-price">
-							<p class="prod-card-price__new">15 799 Р</p>
-							<p class="prod-card-price__old">28 300 Р</p>
+							<p class="prod-card-price__new">24 300 Р</p>
+							<p class="prod-card-price__old line-through">28 300 Р</p>
 						</div>
-						<p class="nalich">В наличии: <span>мало</span></p>
+						<p class="nalich">В наличии: 21 шт.</p>
 					</div>
 					<a href="#" target="_blank" class="getkp">
-						<span>Получить КП</span>
-						<span>PDF, 2.1 Mb</span>
+						<h4 class="getkp-title">Доступно в рассрочку</h4>	
+						<p class="getkp-text">больше про условия</p>
 					</a>
 				</div>
 				<div class="opt-block">
-					<p data-hystmodal="#formPopup">Купить оптом</p>
-					<p>Цена за набор 8 шт.: <b>12 232 Р</b></p>
-					<p>Цена за ед.товара: <span class="orange">1 354 Р</span> <span class="linethrou">3 168 Р</span></p>
+					<button data-hystmodal="#formPopup" href="#catd-tabs" class="all-har character-btn">Купить оптом</button>
+					<p>Цена за набор 8 шт.: <b>1232 Р</b></p>
+					<p>Цена за ед.товара: <b>154 Р</b> <span class="line-through">168 Р</span></p>
 				</div>
 				<div class="card-col-main__btns">
 					<div class="prod-card-count">
@@ -538,18 +643,26 @@
 						<input type="hidden" value="1" class="num" name="num">
 					</div>
 					<a href="#" class="card-col-cartbtn">
-						<span>В корзину</span>
+						<svg width="18" height="16" viewBox="0 0 18 16" fill="none">
+							<path d="M11.8734 8.22639C12.4676 8.22639 12.9905 7.92855 13.2599 7.47814L16.0963 2.76343C16.163 2.65331 16.1973 2.52912 16.1956 2.40314C16.194 2.27716 16.1565 2.15376 16.0869 2.04515C16.0172 1.93654 15.9179 1.84648 15.7986 1.78388C15.6794 1.72129 15.5444 1.68833 15.407 1.68827H3.68121L2.93646 0.235352H0.345703V1.68827H1.93027L4.78248 7.20209L3.7129 8.97464C3.13454 9.9481 3.89513 11.1322 5.09939 11.1322H14.6068V9.67931H5.09939L5.9709 8.22639H11.8734ZM4.43388 3.14118H14.0601L11.8734 6.77348H6.31159L4.43388 3.14118ZM5.09939 11.8587C4.22788 11.8587 3.52275 12.5125 3.52275 13.3116C3.52275 14.1107 4.22788 14.7645 5.09939 14.7645C5.9709 14.7645 6.68396 14.1107 6.68396 13.3116C6.68396 12.5125 5.9709 11.8587 5.09939 11.8587ZM13.0222 11.8587C12.1507 11.8587 11.4456 12.5125 11.4456 13.3116C11.4456 14.1107 12.1507 14.7645 13.0222 14.7645C13.8937 14.7645 14.6068 14.1107 14.6068 13.3116C14.6068 12.5125 13.8937 11.8587 13.0222 11.8587Z" fill="white"></path>
+						</svg>
+						<span>Добавить в корзину</span>
 					</a>
 				</div>
 				<a href="#" class="btn-zakaz">Заказать в один клик</a>
-				<a href="#" class="sale-ur-btn">% Скидки для юр.лиц</a>
+				<div class="card-special">
+					<img src="./assets/img/icon/card-specia;.svg" width="22" height="22" loading="lazy" alt="icon">
+					<span>Бесплатная</span> доставка от 1500 Р 
+				</div>
 				<div class="card-col-main__bottom">
 					<div class="card-col-main__bottom-dost">
-						<p>Доставка по всей России</p>
-						<a href="#">Условия доставки</a>
+						<p><b>Самовывоз:</b> сегодня</p>
+						<a href="#" class="all-har">
+							<span>Список магазинов самовывоза</span>
+						</a>
 					</div>
 					<div class="card-col-main__bottom-manufac">
-						<a href="#catd-tabs" class="opisan-btn">Информация о производителе</a>
+						<a href="#catd-tabs" class="opisan-btn"><b>Курьером:</b> <span>бесплатно</span>, завтра</a>
 					</div>
 				</div>
 			</div>
@@ -632,26 +745,36 @@
 							<p>
 								Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
 								является качественно новой ступенью вывода текущих активов. Но понимание сути ресурсосберегающих
-								технологий требует определения и уточнения новых принципов формирования материально-технической и
+								технологий требует определения и уточнения новых принципов формирования материально-технической
+								и
 								кадровой базы.
 							</p>
 							<p>
-								Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы могут быть функционально
-								разнесены на независимые элементы. Идейные соображения высшего порядка, а также реализация намеченных
+								Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы могут быть
+								функционально
+								разнесены на независимые элементы. Идейные соображения высшего порядка, а также реализация
+								намеченных
 								плановых заданий способствует подготовке и реализации системы массового участия.
 							</p>
 							<p>
-								Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы призывают нас к
-								новым свершениям, которые, в свою очередь, должны быть в равной степени предоставлены сами себе. Но
-								сложившаяся структура организации играет важную роль в формировании как самодостаточных, так и внешне
-								зависимых концептуальных решений. Учитывая ключевые сценарии поведения, повышение уровня гражданского
-								сознания напрямую зависит от поставленных обществом задач. Безусловно, социально-экономическое развитие
-								предопределяет высокую востребованность системы обучения кадров, соответствующей насущным потребностям.
+								Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы
+								призывают нас к
+								новым свершениям, которые, в свою очередь, должны быть в равной степени предоставлены сами себе.
+								Но
+								сложившаяся структура организации играет важную роль в формировании как самодостаточных, так и
+								внешне
+								зависимых концептуальных решений. Учитывая ключевые сценарии поведения, повышение уровня
+								гражданского
+								сознания напрямую зависит от поставленных обществом задач. Безусловно, социально-экономическое
+								развитие
+								предопределяет высокую востребованность системы обучения кадров, соответствующей насущным
+								потребностям.
 							</p>
 							<p>
 								Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
 								является качественно новой ступенью вывода текущих активов. Но понимание сути ресурсосберегающих
-								технологий требует определения и уточнения новых принципов формирования материально-технической и
+								технологий требует определения и уточнения новых принципов формирования материально-технической
+								и
 								кадровой базы.
 							</p>
 						</div>
@@ -813,13 +936,16 @@
 					<div class="reviews-wrapper">
 						<div class="reviews-swiper swiper">
 							<div class="swiper-wrapper">
-								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide"
+									data-fancybox="reviews-1">
 									<img src="assets/img/decor/reviews-1.png" alt="">
 								</a>
-								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide"
+									data-fancybox="reviews-1">
 									<img src="assets/img/decor/reviews-1.png" alt="">
 								</a>
-								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide"
+									data-fancybox="reviews-1">
 									<img src="assets/img/decor/reviews-1.png" alt="">
 								</a>
 							</div>
@@ -1627,17 +1753,28 @@
 
 	<section class="banner-3 wrapper mb-100">
 		<div class="banner-3-body swiper-slide">
-			<img src="assets/img/banners/bannermain-3__bg.png" alt="" class="banner-3-bg img" aria-hidden="true">
+			<div class="banner-3-bg img">
+				<img src="assets/img/decor/bg-decor-purple.svg" width="770" height="770" alt="decor" aria-hidden="true">
+			</div>
 			<div class="banner-3-left">
 				<h2 class="banner-3-title">
-					<span>новый</span> ASTECH ASM-4800
+					Остались вопросы?
 				</h2>
 				<p class="banner-3-subtitle">
-					Окрасочный аппарат поршневого типа. Беcщеточный двигатель.
+					наши эксперты подберут лучшее решение под ваш бюджет!
 				</p>
 				<form action="" class="banner-3-form">
-					<input type="tel" placeholder="Номер телефона" required="">
-					<input type="submit" value="Оставить заявку" class="banner-3-form-submit">
+					<div class="banner-3-form-fields">
+						<input type="text" placeholder="Укажите ваше ФИО" required>
+						<input type="tel" placeholder="Номер телефона" required>
+					</div>
+					<div class="banner-3-form-fields">
+						<label for="privacy" class="custom-checkbox">
+							<input type="checkbox" id="privacy" name="privacy">
+							<span>Я даю согласие на обработку персональных данных</span>
+						</label>
+						<input type="submit" value="Получить консультацию бесплатно" class="banner-3-form-submit">
+					</div>
 				</form>
 			</div>
 			<div class="banner-3-right">
@@ -1645,28 +1782,19 @@
 					<img src="assets/img/banners/bannermain-1__img.png" alt="" class="desc">
 					<img src="assets/img/banners/bannermain-1__img-mob.png" alt="" class="mob">
 
-					<div class="banner-3-sticker">
-						<p>
-							скидка до
-							<span>-20%</span>
-						</p>
-					</div>
-
 					<div class="banner-3-bullet bullet-1">
 						<div class="banner-3-bullet__inner">
-							<img src="assets/img/banners/bullet-1.png" alt="">
+							Отвечаем в течение 20 минут!
 						</div>
 					</div>
 					<div class="banner-3-bullet bullet-2">
 						<div class="banner-3-bullet__inner">
-							<p>сопло 517</p>
-							<p>в комплекте</p>
+							Эксперты с опытом от 10 лет
 						</div>
 					</div>
 					<div class="banner-3-bullet bullet-3">
 						<div class="banner-3-bullet__inner">
-							<p>3000 вт</p>
-							<p>мощность</p>
+							Дополнительное преимущество
 						</div>
 					</div>
 				</div>
@@ -1679,28 +1807,24 @@
 			<div class="footer-top">
 				<a href="/" class="logo-group">
 					<div class="logo-img">
-						<img src="assets/img/logo.png" alt="">
-					</div>
-					<div class="logo-text">
-						<p class="logo-text__name">АСМ технологии</p>
-						<p class="logo-text__subtitle">
-							Аренда, продажа и ремонт<br>
-							безвоздушного окрасочного<br>
-							оборудования
-						</p>
+						<img src="assets/img/logo.svg" alt="logo">
 					</div>
 				</a>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Ясенево"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Санкт-Петербург</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p class="metro-icon">метро "Речной Вокзал"</p>
-					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+					<p class="metro-icon">Москва</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 				<div class="header-mid__metrotel">
-					<p>Написать нам на почту:</p>
-					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+					<p class="metro-icon">Екатеринбург</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">Бесплатный по всей России</p>
+					<a href="tel:+78126482484">+7 (812) 648-24-84</a>
 				</div>
 			</div>
 
@@ -1708,33 +1832,35 @@
 				<div class="footer-menu">
 					<p class="footer-menu-title">Каталог</p>
 					<ul>
-						<li><a href="#">Аренда оборудования</a></li>
-						<li><a href="#">Окрасочные аппараты</a></li>
-						<li><a href="#">Шлифовальные машинки</a></li>
-						<li><a href="#">Комплектующие</a></li>
-						<li><a href="#">Аксессуары</a></li>
-						<li><a href="#">Запчасти</a></li>
-						<li><a href="#">БУ на новые</a></li>
+						<li><a href="#">Электрические теплые полы</a></li>
+						<li><a href="#">Нагревательные маты</a></li>
+						<li><a href="#">Пленочные теплые полы</a></li>
+						<li><a href="#">Кабельные секции</a></li>
+						<li><a href="#">Тонкие нагревательные маты</a></li>
+						<li><a href="#">Терморегуляторы для теплого пола</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu">
 					<p class="footer-menu-title">Услуги</p>
 					<ul>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">Сервисный центр</a></li>
-						<li><a href="#">Для дилеров</a></li>
-						<li><a href="#" class="blue">Вакансии</a></li>
+						<li><a href="#">Обогрев открытых площадей</a></li>
+						<li><a href="#">Обогрев теплиц</a></li>
+						<li><a href="#">Проектирование</a></li>
+						<li><a href="#">Монтаж</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Калькулятор</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu">
 					<p class="footer-menu-title">Информация</p>
 					<ul>
+						<li><a href="#">Акции</a></li>
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Блог</a></li>
 						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Оплата и возврат</a></li>
+						<li><a href="#">Вакансии</a></li>
 					</ul>
 				</div>
 				<div class="footer-menu menubox-soc">
@@ -1742,31 +1868,31 @@
 					<ul>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+								<img src="assets/img/icon/menubox-soc__vk.svg" alt="">
 								<span>Вконтакте</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+								<img src="assets/img/icon/menubox-soc__yt.svg" alt="">
 								<span>Youtube</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+								<img src="assets/img/icon/menubox-soc__ws.svg" alt="">
 								<span>WhatsApp</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+								<img src="assets/img/icon/menubox-soc__yd.svg" alt="">
 								<span>Яндекс.Дзен</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+								<img src="assets/img/icon/menubox-soc__rt.svg" alt="">
 								<span>Rutube</span>
 							</a>
 						</li>
@@ -1775,7 +1901,10 @@
 			</div>
 
 			<div class="footer-ur">
-				Здесь может быть расположена юридическая информация о вашей компании
+				<p>(c) 2000–2022, ООО «Обогрев Люкс»</p>
+				<p>“Обогрев Люкс” использует файлы «cookie», с целью персонализации сервисов и повышения удобства
+					пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих
+					посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.</p>
 			</div>
 
 			<div class="footer-bottom">
@@ -1783,7 +1912,7 @@
 					Политика конфиденциальности Политика компании в отношении обработки персональных данных
 				</a>
 				<a href="http://silverduck.net/" target="_blank">
-					Разработка SilverDuck
+					Разработка и продвижение SilverDuck
 				</a>
 			</div>
 		</div>
