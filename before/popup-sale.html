@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Попапы</title>
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+	<link rel="stylesheet" href="assets/css/hystmodal.css">
+	<link rel="stylesheet" href="assets/swiper-slider/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div id="header-top" class="header-top">
+			<div class="header-top__inner wrapper">
+				<ul class="header-top__nav">
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Дилеры</a></li>
+					<li><a href="#">Сервисный центр</a></li>
+					<li><a href="#">Сотрудничество</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="header-top__auth-btn">
+					<span>Вход/Регистрация</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="header-mid" class="header-mid">
+			<div class="header-mid__inner wrapper">
+				<a href="/" class="logo-group">
+					<div class="logo-img">
+						<img src="assets/img/logo.png" alt="">
+					</div>
+					<div class="logo-text">
+						<p class="logo-text__name">АСМ технологии</p>
+						<p class="logo-text__subtitle">
+							Аренда, продажа и ремонт<br>
+							безвоздушного окрасочного<br>
+							оборудования
+						</p>
+					</div>
+				</a>
+				<div class="mob-headerbtns">
+					<a href="tel:+79000000000" class="header-tel-btn"></a>
+					<div class="burger-menu">
+						<span></span>
+					</div>
+				</div>
+				<form class="page-header-search" name="search" action="">
+					<div class="page-header-search__wrapper">
+						<input type="text" class="header-search-input" placeholder="введите наименование товара..." name="">
+						<button class="search-button" type="submit">
+							<img src="assets/img/icon/search-header.svg" alt="">
+						</button>
+					</div>
+				</form>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="header-bot" class="header-bot">
+			<div class="wrapper">
+				<div class="header-bot__inner">
+					<ul class="header-bot__menu">
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Аренда оборудования</a>
+							<div class="dropdown-content">
+								<div class="header-catlist">
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Телескопические шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/logo.png" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Шлифовальные круги-диски
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Ручные шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Телескопические шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Шлифовальные круги-диски
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Ручные шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+								</div>
+								<div class="header-brands">
+									<p class="header-brands__title">Бренды</p>
+									<p class="header-brands__descrip">Торговые марки, которые мы представляем</p>
+									<div class="header-brands__list">
+										<ul>
+											<li><a href="#">ASTECH</a></li>
+											<li><a href="#">FESTOOL</a></li>
+											<li><a href="#">MIRKA</a></li>
+											<li><a href="#">ASTECH</a></li>
+											<li><a href="#">FESTOOL</a></li>
+											<li><a href="#">MIRKA</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Окрасочные аппараты</a></li>
+						<li><a href="#">Шлифовальные машинки</a></li>
+						<li><a href="#">Комплектующие</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Запчасти</a></li>
+					</ul>
+					<div class="cart-group">
+						<a href="#" class="fav-btn"></a>
+						<a href="#" class="comp-btn"></a>
+						<span class="cart-group__sep"></span>
+						<a href="#" class="cart-btn">
+							<span class="colvo">12</span>
+							146 840 ₽
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Бургер-меню на мобильной версии -->
+	<div class="menubox">
+		<div class="menubox__inner">
+			<div class="menubox-metrotel">
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+			<div class="menuburger">
+				<div class="menuburger-item">
+					<div class="menuburger-header">Каталог</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menuburger-item">
+					<div class="menuburger-header">Услуги</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menuburger-item">
+					<div class="menuburger-header">Информация</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menubox-soc">
+				<p class="menubox-soc__title">Социальные сети</p>
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+							<span>Вконтакте</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+							<span>Youtube</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+							<span>WhatsApp</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+							<span>Яндекс.Дзен</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+							<span>Rutube</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menubox-footer">
+				<p>Здесь может быть расположена юридическая информация о вашей компании</p>
+				<div class="menubox-footer__bottom">
+					<a href="#">
+						Политика конфиденциальности Политика компании в отношении обработки персональных данных
+					</a>
+					<a href="http://silverduck.net/" target="_blank">
+						Разработка SilverDuck
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="page-top compare-page wrapper">
+		<div class="breadcrumbs">
+			<span class="itemListElement">
+				<a href="/"></a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Попапы
+				</a>
+			</span>
+		</div>
+		<h1 class="title-page">
+			Попапы
+		</h1>
+	</section>
+
+	<section class="wrapper mb-100">
+		<style>
+			.asdfg {
+				background: #fff;
+				border-radius: 16px;
+				box-shadow: 0 0 12px #e3e3e3;
+				padding: 25px 20px;
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			.asdfg>p {
+				font-size: 20px;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+
+			.asdfg-fx {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.asdfg-fx-i {
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 40px;
+				padding: 10px 30px;
+				cursor: pointer;
+				outline: none;
+				background: linear-gradient(257.64deg, #50BAF5 0.13%, #115BA4 91.98%), #165EA4;
+				border-radius: 50px;
+				border: 1px solid #fff;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 20px;
+				text-align: center;
+				color: #fff;
+				white-space: nowrap;
+			}
+		</style>
+		<div class="asdfg">
+			<p>
+				Страница для демонстрации попапов<br><br>
+				открытие попапа работает по нажатию на кнутпку с дата-атрибутом data-hystmodal<br><br>
+				Этот блок можно полностью удалять
+			</p>
+			<div class="asdfg-fx">
+				<div class="asdfg-fx-i" data-hystmodal="#salePopup">
+					Попап скидки
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="banner-3 wrapper mb-100">
+		<div class="banner-3-body swiper-slide">
+			<img src="assets/img/banners/bannermain-3__bg.png" alt="" class="banner-3-bg img" aria-hidden="true">
+			<div class="banner-3-left">
+				<h2 class="banner-3-title">
+					<span>новый</span> ASTECH ASM-4800
+				</h2>
+				<p class="banner-3-subtitle">
+					Окрасочный аппарат поршневого типа. Беcщеточный двигатель.
+				</p>
+				<form action="" class="banner-3-form">
+					<input type="tel" placeholder="Номер телефона" required="">
+					<input type="submit" value="Оставить заявку" class="banner-3-form-submit">
+				</form>
+			</div>
+			<div class="banner-3-right">
+				<div class="banner-3-img">
+					<img src="assets/img/banners/bannermain-1__img.png" alt="" class="desc">
+					<img src="assets/img/banners/bannermain-1__img-mob.png" alt="" class="mob">
+
+					<div class="banner-3-sticker">
+						<p>
+							скидка до
+							<span>-20%</span>
+						</p>
+					</div>
+
+					<div class="banner-3-bullet bullet-1">
+						<div class="banner-3-bullet__inner">
+							<img src="assets/img/banners/bullet-1.png" alt="">
+						</div>
+					</div>
+					<div class="banner-3-bullet bullet-2">
+						<div class="banner-3-bullet__inner">
+							<p>сопло 517</p>
+							<p>в комплекте</p>
+						</div>
+					</div>
+					<div class="banner-3-bullet bullet-3">
+						<div class="banner-3-bullet__inner">
+							<p>3000 вт</p>
+							<p>мощность</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<a href="/" class="logo-group">
+					<div class="logo-img">
+						<img src="assets/img/logo.png" alt="">
+					</div>
+					<div class="logo-text">
+						<p class="logo-text__name">АСМ технологии</p>
+						<p class="logo-text__subtitle">
+							Аренда, продажа и ремонт<br>
+							безвоздушного окрасочного<br>
+							оборудования
+						</p>
+					</div>
+				</a>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+
+			<div class="footer-middle">
+				<div class="footer-menu">
+					<p class="footer-menu-title">Каталог</p>
+					<ul>
+						<li><a href="#">Аренда оборудования</a></li>
+						<li><a href="#">Окрасочные аппараты</a></li>
+						<li><a href="#">Шлифовальные машинки</a></li>
+						<li><a href="#">Комплектующие</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Запчасти</a></li>
+						<li><a href="#">БУ на новые</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<p class="footer-menu-title">Услуги</p>
+					<ul>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Сервисный центр</a></li>
+						<li><a href="#">Для дилеров</a></li>
+						<li><a href="#" class="blue">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<p class="footer-menu-title">Информация</p>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu menubox-soc">
+					<p class="footer-menu-title">Социальные сети</p>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+								<span>Вконтакте</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+								<span>Youtube</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+								<span>WhatsApp</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+								<span>Яндекс.Дзен</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+								<span>Rutube</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-ur">
+				Здесь может быть расположена юридическая информация о вашей компании
+			</div>
+
+			<div class="footer-bottom">
+				<a href="#" target="_blank">
+					Политика конфиденциальности Политика компании в отношении обработки персональных данных
+				</a>
+				<a href="http://silverduck.net/" target="_blank">
+					Разработка SilverDuck
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<style>
+		.salePopup-body {
+			display: flex;
+			width: 100%;
+			min-height: 330px;
+			align-items: stretch;
+			border-radius: 20px;
+		}
+
+		.salePopup-left {
+			position: relative;
+			width: 440px;
+			background: url(assets/img/decor/popup-bg.jpg) no-repeat 50% 50%;
+			background-size: cover;
+			border-radius: 20px 0 0 20px;
+		}
+
+		.salePopup-left:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: url(assets/img/banners/bannermain-1__img.png) no-repeat 50% 100%;
+		}
+
+		.salePopup-body .text {
+			margin: 10px 0 20px;
+		}
+
+		.salePopup-body .loginPopup-submit {
+			margin-top: 15px;
+		}
+
+		@media screen and (max-width: 980px) {
+			#salePopup .hystmodal__window {
+				width: 480px;
+			}
+
+			.salePopup-body {
+				min-height: auto;
+				flex-direction: column-reverse;
+			}
+
+			.loginPopup-left {
+				display: none;
+			}
+
+			.loginPopup-right {
+				border-radius: 20px;
+			}
+		}
+	</style>
+	<!-- попап скидки -->
+	<div class="hystmodal usloviya" id="salePopup" aria-hidden="true">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+				<button data-hystclose class="hystmodal__close">Закрыть</button>
+				<div class="salePopup-body">
+					<div class="salePopup-left">
+
+					</div>
+					<div class="loginPopup-right">
+						<div class="loginPopup-right__body">
+							<div class="loginPopup-right__title">
+								<h2 class="title">
+									Хочу скидку!
+								</h2>
+								<p class="text">
+									Оставьте ваши контактные данные, и наш <br>
+									специалист обсудит с вами специальные условия
+								</p>
+							</div>
+							<form action="">
+
+								<div class="loginPopup-input">
+									<p>Номер телефона:</p>
+									<input type="tel" name="Телефон" placeholder="" required="">
+								</div>
+
+								<input type="submit" value="Получить скидку" class="loginPopup-submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.9.2.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="assets/js/inputmask.min.js"></script>
+	<script type="text/javascript" src="assets/swiper-slider/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/js/fancybox.umd.js"></script>
+	<script type="text/javascript" src="assets/js/hystmodal.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/customScript.js"></script>
+</body>
+
+</html>

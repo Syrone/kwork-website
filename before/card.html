@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карточка товара</title>
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+	<link rel="stylesheet" href="assets/css/hystmodal.css">
+	<link rel="stylesheet" href="assets/swiper-slider/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div id="header-top" class="header-top">
+			<div class="header-top__inner wrapper">
+				<ul class="header-top__nav">
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Дилеры</a></li>
+					<li><a href="#">Сервисный центр</a></li>
+					<li><a href="#">Сотрудничество</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="header-top__auth-btn">
+					<span>Вход/Регистрация</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="header-mid" class="header-mid">
+			<div class="header-mid__inner wrapper">
+				<a href="/" class="logo-group">
+					<div class="logo-img">
+						<img src="assets/img/logo.png" alt="">
+					</div>
+					<div class="logo-text">
+						<p class="logo-text__name">АСМ технологии</p>
+						<p class="logo-text__subtitle">
+							Аренда, продажа и ремонт<br>
+							безвоздушного окрасочного<br>
+							оборудования
+						</p>
+					</div>
+				</a>
+				<div class="mob-headerbtns">
+					<a href="tel:+79000000000" class="header-tel-btn"></a>
+					<div class="burger-menu">
+						<span></span>
+					</div>
+				</div>
+				<form class="page-header-search" name="search" action="">
+					<div class="page-header-search__wrapper">
+						<input type="text" class="header-search-input" placeholder="введите наименование товара..." name="">
+						<button class="search-button" type="submit">
+							<img src="assets/img/icon/search-header.svg" alt="">
+						</button>
+					</div>
+				</form>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="header-bot" class="header-bot">
+			<div class="wrapper">
+				<div class="header-bot__inner">
+					<ul class="header-bot__menu">
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Аренда оборудования</a>
+							<div class="dropdown-content">
+								<div class="header-catlist">
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Телескопические шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/logo.png" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Шлифовальные круги-диски
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Ручные шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Телескопические шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Шлифовальные круги-диски
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+									<a href="#" class="header-catlist-item">
+										<div class="header-catlist__thumb">
+											<img src="assets/img/propd/header-catlist__thumb.jpg" alt="">
+										</div>
+										<p class="header-catlist__name">
+											Ручные шлифовальные машинки
+										</p>
+										<p class="header-catlist__descrip">
+											Торговые марки, которые мы представляем
+										</p>
+									</a>
+								</div>
+								<div class="header-brands">
+									<p class="header-brands__title">Бренды</p>
+									<p class="header-brands__descrip">Торговые марки, которые мы представляем</p>
+									<div class="header-brands__list">
+										<ul>
+											<li><a href="#">ASTECH</a></li>
+											<li><a href="#">FESTOOL</a></li>
+											<li><a href="#">MIRKA</a></li>
+											<li><a href="#">ASTECH</a></li>
+											<li><a href="#">FESTOOL</a></li>
+											<li><a href="#">MIRKA</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Окрасочные аппараты</a></li>
+						<li><a href="#">Шлифовальные машинки</a></li>
+						<li><a href="#">Комплектующие</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Запчасти</a></li>
+					</ul>
+					<div class="cart-group">
+						<a href="#" class="fav-btn"></a>
+						<a href="#" class="comp-btn"></a>
+						<span class="cart-group__sep"></span>
+						<a href="#" class="cart-btn">
+							<span class="colvo">12</span>
+							146 840 ₽
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Бургер-меню на мобильной версии -->
+	<div class="menubox">
+		<div class="menubox__inner">
+			<div class="menubox-metrotel">
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+			<div class="menuburger">
+				<div class="menuburger-item">
+					<div class="menuburger-header">Каталог</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menuburger-item">
+					<div class="menuburger-header">Услуги</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menuburger-item">
+					<div class="menuburger-header">Информация</div>
+					<div>
+						<ul>
+							<li><a href="#" class="menu-item">Аренда оборудования</a></li>
+							<li><a href="#" class="menu-item">Окрасочные аппараты</a></li>
+							<li><a href="#" class="menu-item">Шлифовальные машинки</a></li>
+							<li><a href="#" class="menu-item">Комплектующие</a></li>
+							<li><a href="#" class="menu-item">Аксессуары</a></li>
+							<li><a href="#" class="menu-item">Запчасти</a></li>
+							<li><a href="#" class="menu-item">БУ на новые</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menubox-soc">
+				<p class="menubox-soc__title">Социальные сети</p>
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+							<span>Вконтакте</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+							<span>Youtube</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+							<span>WhatsApp</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+							<span>Яндекс.Дзен</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">
+							<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+							<span>Rutube</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menubox-footer">
+				<p>Здесь может быть расположена юридическая информация о вашей компании</p>
+				<div class="menubox-footer__bottom">
+					<a href="#">
+						Политика конфиденциальности Политика компании в отношении обработки персональных данных
+					</a>
+					<a href="http://silverduck.net/" target="_blank">
+						Разработка SilverDuck
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="page-top card-page wrapper">
+		<div class="breadcrumbs">
+			<span class="itemListElement">
+				<a href="/"></a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Шлифовальные машинки
+				</a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Шлифовальные круги-диски
+				</a>
+			</span>
+			<span class="itemListElement">
+				<a href="#">
+					Шлифовальный круг диск D=225 ММ R=любое зерно
+				</a>
+			</span>
+		</div>
+		<h1 class="title-page">Шлифовальный круг диск D=225 ММ R=любое зерно</h1>
+	</section>
+
+	<section class="card-inner wrapper mb-100">
+		<div class="card-col-thumbs">
+			<div class="card-col-thumbs-header">
+				<div class="card-col-thumbs-art">
+					<b>Артикул: </b> 123456
+				</div>
+				<div class="prod-card-reviews">
+					<div class="review-stars">
+						<span class="review-star"></span>
+						<span class="review-star"></span>
+						<span class="review-star"></span>
+						<span class="review-star"></span>
+						<span class="review-star star-dis"></span>
+					</div>
+					<p class="prod-card-reviews__reit">рейтинг 4/5</p>
+					<span class="prod-card-reviews__sep"> | </span>
+					<p class="prod-card-reviews__kolvo">10 отзывов</p>
+				</div>
+			</div>
+			<div class="thumbs-wrapper">
+				<!-- Главный слайдер с большой картинкой товара -->
+				<div class="card-inner-thumb swiper">
+					<div class="swiper-wrapper">
+						<!-- Слайды -->
+						<div class="swiper-slide">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="assets/img/propd/prod-inner-1.png" class="prod-card-thumb__slide" data-fancybox="gallery-1">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Слайдер миниатюр -->
+				<div class="card-thums-wrapper">
+					<div class="card-thums swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="assets/img/propd/prod-inner-1.png" src="assets/img/1x1.png" alt=""
+									class="img swiper-lazy">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+					</div>
+					<div class="card-thums-nav">
+						<div class="card-button-prev"></div>
+						<div class="card-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-col-descrip">
+			<p class="card-col-descrip__title">
+				Описание:
+			</p>
+			<p class="card-col-descrip__text">
+				Шлифовальный круг диск<br>
+				D=225 ММ
+			</p>
+			<ul class="card-col-descrip__list">
+				<li>
+					<span class="card-col-descrip__list-name">
+						бренд
+					</span>
+					<a href="#catd-tabs" class="card-col-descrip__list-brand opisan-btn">
+						<img src="assets/img/banners/bullet-1.png" alt="">
+					</a>
+				</li>
+				<li>
+					<span class="card-col-descrip__list-name">
+						производительность:
+					</span>
+					<span class="card-col-descrip__list-value">
+						6 л/м
+					</span>
+				</li>
+			</ul>
+			<p class="card-col-descrip__title">
+				Характеристики:
+			</p>
+			<div class="card-col-descrip__har">
+				<p class="card-col-descrip__har-title">Зерно:</p>
+				<div class="card-col-descrip__har-list">
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=40" checked>
+						<span>R=40</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=60">
+						<span>R=60</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=80">
+						<span>R=80</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=100">
+						<span>R=100</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=120">
+						<span>R=120</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=150">
+						<span>R=150</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=180">
+						<span>R=180</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=240">
+						<span>R=240</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="Тип зерна" value="R=320">
+						<span>R=320</span>
+					</label>
+				</div>
+			</div>
+			<a href="#catd-tabs" class="all-har character-btn">Все характеристики</a>
+		</div>
+
+		<div class="card-col-main">
+			<div class="card-col-main-header">
+				<a href="#" class="comp-gray">Сравнить</a>
+				<a href="#" class="fav-gray">В избранное</a>
+				<a href="#" class="sale-orange">Хочу скидку!</a>
+			</div>
+			<div class="card-col-main-body">
+				<div class="card-col-main-top">
+					<div class="card-col-main-price">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<a href="#" target="_blank" class="getkp">
+						<span>Получить КП</span>
+						<span>PDF, 2.1 Mb</span>
+					</a>
+				</div>
+				<div class="opt-block">
+					<p data-hystmodal="#formPopup">Купить оптом</p>
+					<p>Цена за набор 8 шт.: <b>12 232 Р</b></p>
+					<p>Цена за ед.товара: <span class="orange">1 354 Р</span> <span class="linethrou">3 168 Р</span></p>
+				</div>
+				<div class="card-col-main__btns">
+					<div class="prod-card-count">
+						<input type="button" class="buttonCountMinus" value="-">
+						<div class="buttonCountNumber">1</div>
+						<input type="button" class="buttonCountPlus" value="+">
+						<input type="hidden" value="1" class="num" name="num">
+					</div>
+					<a href="#" class="card-col-cartbtn">
+						<span>В корзину</span>
+					</a>
+				</div>
+				<a href="#" class="btn-zakaz">Заказать в один клик</a>
+				<a href="#" class="sale-ur-btn">% Скидки для юр.лиц</a>
+				<div class="card-col-main__bottom">
+					<div class="card-col-main__bottom-dost">
+						<p>Доставка по всей России</p>
+						<a href="#">Условия доставки</a>
+					</div>
+					<div class="card-col-main__bottom-manufac">
+						<a href="#catd-tabs" class="opisan-btn">Информация о производителе</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="card-tabs mb-100">
+		<div class="card-tabs-swiper swiper">
+			<div class="swiper-wrapper prod__tabs">
+				<div class="swiper-slide prod__tab character-tab" data-tab="1">Характеристики</div>
+				<div class="swiper-slide prod__tab opisan-tab active" data-tab="2">Описание</div>
+				<div class="swiper-slide prod__tab" data-tab="3">Отзывы (44)</div>
+				<a href="#soputstv" class="swiper-slide">Сопутствующие</a>
+				<a href="#pohozie" class="swiper-slide">Похожие</a>
+				<a href="#smotreli" class="swiper-slide">Вы смотрели</a>
+				<a href="assets/img/videoplayback.mp4" data-fancybox="video" class="swiper-slide">Видео</a>
+				<div class="swiper-slide prod__tab" data-tab="4">Сертификаты</div>
+			</div>
+		</div>
+
+		<div id="catd-tabs" class="wrapper">
+			<div class="tab-body">
+
+				<!-- Характеристики -->
+				<div class="prod__box prod__box_1 character-tab">
+					<div class="tab-harakter">
+						<div class="tab-harakter-col">
+							<p>Общие характеристики</p>
+							<table>
+								<tbody>
+									<tr>
+										<td>Артикул</td>
+										<td>102383</td>
+									</tr>
+									<tr>
+										<td>Модель</td>
+										<td>ASM-2200N</td>
+									</tr>
+									<tr>
+										<td>Производитель</td>
+										<td>astek</td>
+									</tr>
+									<tr>
+										<td>Вес брутто, кг</td>
+										<td>12</td>
+									</tr>
+									<tr>
+										<td>Вес нетто, кг</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td>Длина эл.кабеля, м</td>
+										<td>12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<span class="tab-harakter-sep"></span>
+						<div class="tab-harakter-col">
+							<p>Комплект поставки</p>
+							<ul>
+								<li>Окрасочный аппарат</li>
+								<li>Шланг высокого давления 15 м;</li>
+								<li>Пистолет с фильтром в ручке;</li>
+								<li>Удлинитель 0,45м;</li>
+								<li>Соплодержатель;</li>
+								<li>Сопло 517 (50 градусов угол распыления, диаметр отверстия 0,017");</li>
+								<li>Масленка;</li>
+								<li>Инструкция по эксплуатации окрасочного аппарата;</li>
+								<li>Годовая гарантия.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Описание -->
+				<div class="prod__box prod__box_2 active opisan-tab">
+					<div class="tab-opisan">
+						<div class="tab-opisan-text">
+							<p>
+								Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+								является качественно новой ступенью вывода текущих активов. Но понимание сути ресурсосберегающих
+								технологий требует определения и уточнения новых принципов формирования материально-технической и
+								кадровой базы.
+							</p>
+							<p>
+								Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы могут быть функционально
+								разнесены на независимые элементы. Идейные соображения высшего порядка, а также реализация намеченных
+								плановых заданий способствует подготовке и реализации системы массового участия.
+							</p>
+							<p>
+								Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы призывают нас к
+								новым свершениям, которые, в свою очередь, должны быть в равной степени предоставлены сами себе. Но
+								сложившаяся структура организации играет важную роль в формировании как самодостаточных, так и внешне
+								зависимых концептуальных решений. Учитывая ключевые сценарии поведения, повышение уровня гражданского
+								сознания напрямую зависит от поставленных обществом задач. Безусловно, социально-экономическое развитие
+								предопределяет высокую востребованность системы обучения кадров, соответствующей насущным потребностям.
+							</p>
+							<p>
+								Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+								является качественно новой ступенью вывода текущих активов. Но понимание сути ресурсосберегающих
+								технологий требует определения и уточнения новых принципов формирования материально-технической и
+								кадровой базы.
+							</p>
+						</div>
+						<div class="tab-opisan-table">
+							<p class="tab-opisan-table__title">
+								Информация о производителе:
+							</p>
+							<div class="tab-opisan-table__manufac">
+								<div class="tab-opisan-table__manufac-logo">
+									<img src="assets/img/propd/manufac-logo.png" alt="">
+								</div>
+								<p class="tab-opisan-table__manufac-descrip">
+									Страна-производитель: <br>
+									Китай
+								</p>
+							</div>
+							<div class="tab-opisan-table__komplect">
+								<p>Комплектация:</p>
+								<ul>
+									<li>Аппарат</li>
+									<li>Сопло</li>
+									<li>Сменные катриджи</li>
+									<li>Инструкция по применению</li>
+								</ul>
+							</div>
+							<div class="tab-opisan-table__docs">
+								<p>Заголовок для документации:</p>
+								<ul>
+									<li><a href="#" target="_blank" class="download-link">Скачать инструкцию</a></li>
+									<li><a href="#" target="_blank" class="download-link">Скачать документ</a></li>
+									<li><a href="#" target="_blank" class="sert-link">Сертификаты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Отзывы (44) -->
+				<div class="prod__box prod__box_3">
+					<div class="prodreviews">
+						<div class="ask-add">
+							<a href="#new-review">Оставить отзыв</a>
+						</div>
+
+						<div class="ask-review">
+							<div class="ask-name">
+								Пользователь №10 <span>01.11.2022</span>
+							</div>
+							<div class="ask-stars">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<span>отлично</span>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Достоинства:</div>
+								<div class="ask-text">fdsfdsf</div>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Недостатки:</div>
+								<div class="ask-text">dsfdsf</div>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Комментарий:</div>
+								<div class="ask-text">sdfdsfdsfdsf</div>
+							</div>
+						</div>
+
+						<div class="ask-review">
+							<div class="ask-name">
+								Пользователь №11 <span>01.11.2022</span>
+							</div>
+							<div class="ask-stars">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<img src="assets/img/icon/icon-star-a.png" alt="">
+								<span>хорошо</span>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Достоинства:</div>
+								<div class="ask-text">fdsfdsf</div>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Недостатки:</div>
+								<div class="ask-text">dsfdsf</div>
+							</div>
+
+							<div class="ask-review-item">
+								<div class="ask-title">Комментарий:</div>
+								<div class="ask-text">sdfdsfdsfdsf</div>
+							</div>
+						</div>
+
+						<div id="new-review" class="askaron-reviews-new">
+							<h3>Оставить отзыв</h3>
+							<form action="" method="POST">
+
+								<div class="ask-grade stars">Оценка:
+									<div class="ask-grade-stars">
+										<input id="askaron_reviews_grade_1" class="rating" type="radio" name="" value="1"><label
+											for="askaron_reviews_grade_1">1</label>
+										<input id="askaron_reviews_grade_2" class="rating" type="radio" name="" value="2"><label
+											for="askaron_reviews_grade_2">2</label>
+										<input id="askaron_reviews_grade_3" class="rating" type="radio" name="" value="3"><label
+											for="askaron_reviews_grade_3">3</label>
+										<input id="askaron_reviews_grade_4" class="rating" type="radio" name="" value="4"><label
+											for="askaron_reviews_grade_4">4</label>
+										<input id="askaron_reviews_grade_5" class="rating" type="radio" name="" value="5"><label
+											for="askaron_reviews_grade_5">5</label>
+									</div>
+								</div>
+
+								<div class="ask-field">
+									<div>Достоинства</div>
+									<textarea required="" name=""></textarea>
+								</div>
+
+								<div class="ask-field">
+									<div>Недостатки</div>
+									<textarea required="" name=""></textarea>
+								</div>
+
+								<div class="ask-field">
+									<div>Комментарий</div>
+									<textarea class="ask-textarea-big" required="" name=""></textarea>
+								</div>
+
+								<div class="ask-field">
+									<div>Ваше имя</div>
+									<input type="text" required="" name="" value="">
+								</div>
+
+								<div class="ask-field">
+									<div>E-mail</div>
+									<input type="email" required="" name="" value="">
+								</div>
+
+								<button type="submit" name="new_review_form" class="ask-button">
+									Отправить отзыв
+								</button>
+
+							</form>
+							<p class="ask-note">Все поля формы обязательны</p>
+							<p class="ask-note">Отзыв будет опубликован после проверки модератором</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Сертификаты -->
+				<div class="prod__box prod__box_4">
+					<div class="reviews-wrapper">
+						<div class="reviews-swiper swiper">
+							<div class="swiper-wrapper">
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+									<img src="assets/img/decor/reviews-1.png" alt="">
+								</a>
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+									<img src="assets/img/decor/reviews-1.png" alt="">
+								</a>
+								<a href="assets/img/decor/reviews-1.png" class="reviews-item swiper-slide" data-fancybox="reviews-1">
+									<img src="assets/img/decor/reviews-1.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="reviews-nav">
+							<!-- If we need navigation buttons -->
+							<div class="reviews-swiper-button-prev"></div>
+							<div class="reviews-swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="soputstv" class="wrapper mb-100">
+		<div class="header-flex">
+			<div class="header-flex__left">
+				<h2 class="title">К этому могут подойти:</h2>
+				<!-- плашка с оранжевой заливкой .grad-orange -->
+				<p class="plashka grad-orange">
+					Акция 2+1
+				</p>
+			</div>
+			<div class="header-flex__right">
+				<a href="#" class="btn-more">
+					<span class="btn-more-arr">Смотреть все</span>
+				</a>
+			</div>
+		</div>
+		<div class="porod-5-swiper swiper">
+			<div class="swiper-wrapper">
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="pohozie" class="wrapper mb-100">
+		<div class="header-flex">
+			<div class="header-flex__left">
+				<h2 class="title">Смотрите также:</h2>
+			</div>
+			<div class="header-flex__right">
+				<a href="#" class="btn-more">
+					<span class="btn-more-arr">Смотреть все</span>
+				</a>
+			</div>
+		</div>
+		<div class="porod-5-swiper swiper">
+			<div class="swiper-wrapper">
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="smotreli" class="wrapper mb-100">
+		<div class="header-flex">
+			<div class="header-flex__left">
+				<h2 class="title">Вы недавно смотрели:</h2>
+			</div>
+			<div class="header-flex__right">
+				<a href="#" class="btn-more">
+					<span class="btn-more-arr">Смотреть все</span>
+				</a>
+			</div>
+		</div>
+		<div class="porod-5-swiper swiper">
+			<div class="swiper-wrapper">
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="prod-card swiper-slide">
+					<div class="prod-card-header">
+						<p class="prod-card-header__art">Артикул: 123456</p>
+						<div class="prod-card-header__btns">
+							<a href="#" class="fav-blue"></a>
+							<a href="#" class="comp-blue"></a>
+						</div>
+					</div>
+					<div class="prod-card-thumb images">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+						<img class="img image" src="assets/img/banners/bannermain-1__bg.png" loading="lazy">
+						<img class="img image" src="assets/img/propd/prod-min-1.jpg" loading="lazy">
+					</div>
+					<div class="prod-card-main">
+						<div class="prod-card-reviews">
+							<div class="review-stars">
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star"></span>
+								<span class="review-star star-dis"></span>
+							</div>
+							<p class="prod-card-reviews__kolvo">10 отзывов</p>
+						</div>
+						<a href="#" class="prod-card-title">
+							Шлифовальный круг диск D=225 ММ R100 <br>
+							8 отверстий
+						</a>
+						<p class="nalich">В наличии: <span>мало</span></p>
+					</div>
+					<div class="prod-card-bottom">
+						<p class="prod-card-price-title">Цена за штуку:</p>
+						<div class="prod-card-price">
+							<p class="prod-card-price__new">15 799 Р</p>
+							<p class="prod-card-price__old">28 300 Р</p>
+						</div>
+						<a href="#" class="prod-card-test">Тест-драйв на 1 день</a>
+						<div class="prod-card-bottom__btns">
+							<div class="prod-card-count">
+								<input type="button" class="buttonCountMinus" value="-">
+								<div class="buttonCountNumber">1</div>
+								<input type="button" class="buttonCountPlus" value="+">
+								<input type="hidden" value="1" class="num" name="num">
+							</div>
+							<a href="#" class="prod-card-cartbtn">В корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="banner-3 wrapper mb-100">
+		<div class="banner-3-body swiper-slide">
+			<img src="assets/img/banners/bannermain-3__bg.png" alt="" class="banner-3-bg img" aria-hidden="true">
+			<div class="banner-3-left">
+				<h2 class="banner-3-title">
+					<span>новый</span> ASTECH ASM-4800
+				</h2>
+				<p class="banner-3-subtitle">
+					Окрасочный аппарат поршневого типа. Беcщеточный двигатель.
+				</p>
+				<form action="" class="banner-3-form">
+					<input type="tel" placeholder="Номер телефона" required="">
+					<input type="submit" value="Оставить заявку" class="banner-3-form-submit">
+				</form>
+			</div>
+			<div class="banner-3-right">
+				<div class="banner-3-img">
+					<img src="assets/img/banners/bannermain-1__img.png" alt="" class="desc">
+					<img src="assets/img/banners/bannermain-1__img-mob.png" alt="" class="mob">
+
+					<div class="banner-3-sticker">
+						<p>
+							скидка до
+							<span>-20%</span>
+						</p>
+					</div>
+
+					<div class="banner-3-bullet bullet-1">
+						<div class="banner-3-bullet__inner">
+							<img src="assets/img/banners/bullet-1.png" alt="">
+						</div>
+					</div>
+					<div class="banner-3-bullet bullet-2">
+						<div class="banner-3-bullet__inner">
+							<p>сопло 517</p>
+							<p>в комплекте</p>
+						</div>
+					</div>
+					<div class="banner-3-bullet bullet-3">
+						<div class="banner-3-bullet__inner">
+							<p>3000 вт</p>
+							<p>мощность</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<a href="/" class="logo-group">
+					<div class="logo-img">
+						<img src="assets/img/logo.png" alt="">
+					</div>
+					<div class="logo-text">
+						<p class="logo-text__name">АСМ технологии</p>
+						<p class="logo-text__subtitle">
+							Аренда, продажа и ремонт<br>
+							безвоздушного окрасочного<br>
+							оборудования
+						</p>
+					</div>
+				</a>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Ясенево"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p class="metro-icon">метро "Речной Вокзал"</p>
+					<a href="tel:+78000000000">+7 (800) 000 00 00</a>
+				</div>
+				<div class="header-mid__metrotel">
+					<p>Написать нам на почту:</p>
+					<a href="mailto:info@airless-msk.ru">info@airless-msk.ru</a>
+				</div>
+			</div>
+
+			<div class="footer-middle">
+				<div class="footer-menu">
+					<p class="footer-menu-title">Каталог</p>
+					<ul>
+						<li><a href="#">Аренда оборудования</a></li>
+						<li><a href="#">Окрасочные аппараты</a></li>
+						<li><a href="#">Шлифовальные машинки</a></li>
+						<li><a href="#">Комплектующие</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Запчасти</a></li>
+						<li><a href="#">БУ на новые</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<p class="footer-menu-title">Услуги</p>
+					<ul>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Сервисный центр</a></li>
+						<li><a href="#">Для дилеров</a></li>
+						<li><a href="#" class="blue">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<p class="footer-menu-title">Информация</p>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu menubox-soc">
+					<p class="footer-menu-title">Социальные сети</p>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__vk.png" alt="">
+								<span>Вконтакте</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__yt.png" alt="">
+								<span>Youtube</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__wa.png" alt="">
+								<span>WhatsApp</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__dzen.png" alt="">
+								<span>Яндекс.Дзен</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/img/icon/menubox-soc__rt.png" alt="">
+								<span>Rutube</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-ur">
+				Здесь может быть расположена юридическая информация о вашей компании
+			</div>
+
+			<div class="footer-bottom">
+				<a href="#" target="_blank">
+					Политика конфиденциальности Политика компании в отношении обработки персональных данных
+				</a>
+				<a href="http://silverduck.net/" target="_blank">
+					Разработка SilverDuck
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery-1.9.2.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="assets/js/inputmask.min.js"></script>
+	<script type="text/javascript" src="assets/swiper-slider/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/js/fancybox.umd.js"></script>
+	<script type="text/javascript" src="assets/js/hystmodal.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/customScript.js"></script>
+</body>
+
+</html>
