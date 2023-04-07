@@ -3140,6 +3140,7 @@ select {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease-in;
+	white-space: normal;
 }
 
 .banner-3-form-submit:hover,
@@ -7970,7 +7971,7 @@ a.contacts-row__text {
 
 	.banner-3-body {
 		flex-direction: column;
-		gap: 60px;
+		gap: 120px;
 	}
 
 	.banner-3-left {
@@ -9197,7 +9198,7 @@ a.contacts-row__text {
 	}
 
 	.banner-3-left {
-		padding: 40px;
+		padding: 25px;
 	}
 
 	.banner-3-right,
@@ -9272,7 +9273,7 @@ a.contacts-row__text {
 
 	.banner-3-form-submit {
 		width: 100%;
-		padding: 10px 30px;
+		padding: 10px;
 	}
 
 	.catalog-grid {
@@ -9519,5 +9520,14 @@ a.contacts-row__text {
 
 	.category-plate-item img {
 		display: none;
+	}
+
+	.tab-opisan-table__manufac {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.tab-opisan-table__komplect {
+		flex-direction: column;
 	}
 }
