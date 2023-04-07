@@ -3372,10 +3372,17 @@ select {
 
 .category-item__thumb {
 	flex-shrink: 0;
-	width: 64px;
-	height: 64px;
+	max-width: 64px;
+	width: 100%;
+	max-height: 64px;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
+}
+
+.category-item__thumb img {
+	width: 100%;
+	height: 100%;
 }
 
 .category-item:hover,
@@ -3405,7 +3412,7 @@ select {
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
-	right: -20px;
+	right: 0px;
 }
 
 
@@ -4106,14 +4113,16 @@ form.card-col-descrip__har-list {
 	align-items: center;
 	gap: 5px;
 	max-width: max-content;
-	padding:14px 24px;
+	padding: 14px 24px;
 	border: 1px solid #d9d9d9;
 	border-radius: 100px;
 	transition: .3s ease-in-out;
 	position: relative;
 }
 
-.descr-btn:hover { border-color: var(--primary-color); }
+.descr-btn:hover {
+	border-color: var(--primary-color);
+}
 
 .descr-btn:hover .all-har::after {
 	content: '';
@@ -7018,6 +7027,7 @@ a.contacts-row__text {
 	background: var(--accent-gradient);
 	border-radius: 100px;
 	padding: 10px 20px;
+	text-align: center;
 }
 
 .prodreviews-feedback:is(:hover, :focus-visible) {
@@ -7028,6 +7038,10 @@ a.contacts-row__text {
 
 .user-review:first-of-type {
 	margin-bottom: 30px;
+}
+
+.user-review img {
+	max-width: 100%;
 }
 
 
@@ -7804,7 +7818,7 @@ a.contacts-row__text {
 		padding: 0 30px 30px;
 		margin: 0 -30px;
 	}
-	
+
 	.header-bot__menu>li>a {
 		padding: 16px;
 	}
@@ -7905,6 +7919,12 @@ a.contacts-row__text {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
+	.category-item {
+		flex-direction: column;
+		height: 140px;
+		text-align: center;
+	}
+
 	.preim-glav__text p:first-of-type {
 		white-space: unset;
 	}
@@ -7943,6 +7963,45 @@ a.contacts-row__text {
 		max-width: 420px;
 		margin: 0 auto;
 	}
+
+
+
+	/* баннер 3 */
+
+	.banner-3-body {
+		flex-direction: column;
+		gap: 60px;
+	}
+
+	.banner-3-left {
+		max-width: 100%;
+		padding: 50px 80px;
+	}
+
+	.banner-3-form-fields {
+		flex-direction: column;
+	}
+
+	.banner-3-form input[type="tel"] {
+		max-width: 100%;
+	}
+
+	.banner-3-right {
+		align-self: center;
+		margin-left: 0;
+	}
+
+	.banner-3-bg>img {
+		width: 570px;
+		height: 570px;
+		top: auto;
+		bottom: -200px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+
+	/* .banner-3-img img {
+	} */
 
 
 	.product-list-cartbtn {
@@ -8043,6 +8102,40 @@ a.contacts-row__text {
 		overflow-y: scroll;
 	}
 
+	/* карточка товара */
+
+	.card-tabs {
+		margin-bottom: 60px;
+	}
+
+	.card-inner-thumb .img {
+		object-fit: contain;
+	}
+
+	.tab-harakter {
+		display: flex;
+		flex-direction: column;
+		padding: 0 30px 30px 30px;
+	}
+
+	.tab-harakter-col:first-of-type::before {
+		display: none;
+	}
+
+	.prodreviews {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.prodreviews-item:first-of-type {
+		border: none;
+		padding: 0;
+	}
+
+	.prod__box_4 {
+		margin-bottom: 100px;
+	}
+
 
 	/* работа меню */
 	.burger-menu.active>span {
@@ -8126,6 +8219,12 @@ a.contacts-row__text {
 		font-size: 14px;
 	}
 
+	/* Заголовоки свайперов */
+	.header-flex__left .sale-btn {
+		margin-left: 10px;
+	}
+
+
 	.mainbanner-body,
 	.banner-3-body,
 	.banner-2-body {
@@ -8184,13 +8283,16 @@ a.contacts-row__text {
 	}
 
 	.category-plate {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.preim-glav {
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
+	}
 
+	.preim-glav-item:first-child .preim-glav__img::before {
+		display: block;
 	}
 
 	.prod-card {
@@ -8275,6 +8377,7 @@ a.contacts-row__text {
 
 	.catalog-cols {
 		grid-template-columns: 1fr;
+		margin-bottom: 60px;
 	}
 
 	.catalog-filters {
@@ -8368,7 +8471,7 @@ a.contacts-row__text {
 	}
 
 	.card-tabs-swiper {
-		padding: 0 15px;
+		padding: 0 15px 40px;
 	}
 
 	.card-tabs-swiper .swiper-slide,
@@ -8980,6 +9083,33 @@ a.contacts-row__text {
 }
 
 @media screen and (max-width: 700px) {
+
+	.category-plate {
+		grid-template-columns: 1fr;
+	}
+
+	.category-plate-item {
+		min-height: auto;
+	}
+
+	.category-plate-item:nth-of-type(1),
+	.category-plate-item:nth-of-type(4),
+	.category-plate-item:nth-of-type(7),
+	.category-plate-item:nth-of-type(8) {
+		grid-column: span 1;
+		min-height: 240px;
+	}
+
+	.category-plate-item:nth-of-type(8) img {
+		width: 250px;
+		height: auto;
+		right: 20px;
+	}
+
+	.category-plate-main {
+		width: 60%;
+	}
+
 	.akcii {
 		grid-template-columns: 1fr;
 	}
@@ -9064,6 +9194,15 @@ a.contacts-row__text {
 		top: -18px;
 		left: auto;
 		right: -28px;
+	}
+
+	.banner-3-left {
+		padding: 40px;
+	}
+
+	.banner-3-right,
+	.banner-3-bg {
+		display: none;
 	}
 
 	/* Пунктирные линии у буллета №1 на баннере */
@@ -9289,22 +9428,6 @@ a.contacts-row__text {
 
 @media screen and (max-width: 500px) {
 
-	.category-plate {
-		grid-template-columns: 1fr;
-	}
-
-	.category-plate-item {
-		min-height: auto;
-	}
-
-	.category-plate-item:nth-of-type(1),
-	.category-plate-item:nth-of-type(4),
-	.category-plate-item:nth-of-type(7),
-	.category-plate-item:nth-of-type(8) {
-		grid-column: span 1;
-		min-height: 240px;
-	}
-
 	.header-flex__left {
 		flex-direction: column-reverse;
 		align-items: flex-start;
@@ -9384,5 +9507,17 @@ a.contacts-row__text {
 	.catalog-main.list .prod-card {
 		flex-direction: column;
 		padding-bottom: 25px;
+	}
+
+	.category-plate-item {
+		align-items: center;
+	}
+
+	.category-plate-main {
+		width: 100%;
+	}
+
+	.category-plate-item img {
+		display: none;
 	}
 }

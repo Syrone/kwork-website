@@ -660,6 +660,18 @@ var categorySwiper = new Swiper('.category-swiper', {
 	initialSlide: 0,
 	// freeMode: true,
 	mousewheel: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			initialSlide: 0,
+		},
+		478: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 5,
+		}
+	},
 });
 
 // слайдер Swiper "Смотрите также"
