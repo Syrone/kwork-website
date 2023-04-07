@@ -365,6 +365,23 @@ if (selector.length > 0) {
 $('.images').HvrSlider();
 
 
+// Кастомизация checkbox в карточке товара
+$.each($('.checkbox'), function(index, val){
+	if($(this).find('input').prop('checked')==true){
+		$(this).addClass('active');
+	}
+});
+
+$(document).on('click', '.checkbox', function(event){
+	if($(this).hasClass('active')){
+		$(this).find('input').prop('checked', false);
+	} else {
+		$(this).find('input').prop('checked', true);
+	}
+	$(this).toggleClass('active')
+});
+
+
 
 // Отображение карточек в каталоге
 var checkCook = localStorage.getItem('template');
